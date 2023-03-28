@@ -13,7 +13,9 @@ public class InstrumentAPI extends Base {
     public static final String GET_ALL_INSTRUMENT = BASE_URL + "instruments";
     public static final String GET_LIST_SINGLE_INSTRUMENT = BASE_URL + "mentors/{mentor_id}/instruments";
     public static final String POST_MENTORS_INSTRUMENT = BASE_URL + "mentors/instruments";
-    public static final String DELETE_MENTORS_INSTRUMENT = BASE_URL + "mentors/instruments/{instrument_id}";
+    public static final String DELETE_INSTRUMENT = BASE_URL + "mentors/instruments/{instrument_id}";
+    public static final String DELETE_INSTRUMENT_INVALID_ID = BASE_URL + "mentors/instruments/{string}";
+    public static final String DELETE_INSTRUMENT_BLANK_ID = BASE_URL + "mentors/instruments/{}";
 
 
     @Step("Get all list instrument")
@@ -41,11 +43,10 @@ public class InstrumentAPI extends Base {
     }
 
     @Step("Post create mentors instrument invalid JSON")
-    public static void setPostCreateInstrumentInvalidJSON(String post) {
-        SerenityRest.given()
-                .pathParam("post", post)
-                .contentType("multipart/form-data")
-                .multiPart("instrument_id","asdasf");
+    public static void setPostCreateInstrumentInvalidJSON(File json) {
+        SerenityRest.given().header("Authorization","Bearer "+TOKEN)
+                .contentType(ContentType.JSON)
+                .body(json);
     }
 
     @Step("Post create mentors instrument valid JSON no auth")
