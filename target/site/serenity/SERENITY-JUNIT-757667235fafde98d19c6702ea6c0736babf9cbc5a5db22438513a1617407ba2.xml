@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="[MusicLab-API] Get Feature Instrument" skipped="0" tests="3" time="8.67" timestamp="2023-03-28 04:58:43"><testcase name="[Positive Case] Get All List Instruments"/><testcase name="[Negative Case] Get Single List Instruments"/><testcase name="[Positive Case] Get Single List Instruments"/></testsuite>
