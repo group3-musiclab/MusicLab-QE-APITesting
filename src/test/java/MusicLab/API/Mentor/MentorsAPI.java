@@ -12,9 +12,12 @@ public class MentorsAPI extends Base {
     public static  String TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2ODEyNzk3NTgsInJvbGUiOiJNZW50b3IiLCJ1c2VySWQiOjE5fQ.DMXgj-ACiPMZqmbDeGeNTJOUz5O9-rxdftSqnWxCRJA";
     public static String GET_ALL_LIST_MENTORS = BASE_URL + "mentors";
     public static String GET_ALL_LIST_MENTORS_WITH_PARAM = BASE_URL + "mentors?page={id}";
+    public static String GET_ALL_LIST_MENTORS_WITH_INVALID_PARAM = BASE_URL + "mentors?page={string}";
     public static String GET_ALL_LIST_MENTORS_BY_TOPWEEK = BASE_URL + "mentors/topweek";
     public static String GET_SINGLE_MENTORS_PROFILE = BASE_URL + "mentors/profile";
     public static String GET_SINGLE_MENTORS_PROFILE_BY_ID = BASE_URL + "mentors/{mentor_id}";
+    public static String GET_SINGLE_MENTORS_PROFILE_BY_INVALID_ID = BASE_URL + "mentors/{string}";
+    public static String GET_SINGLE_MENTORS_PROFILE_BY_BLANK_ID = BASE_URL + "mentors/{}";
     public static String POST_CREATED_MENTORS_CREDENTIAL = BASE_URL + "mentors/credentials";
     public static String PUT_UPDATE_MENTORS_PROFILE = BASE_URL + "mentors";
     public static String PUT_UPDATE_MENTORS_PASSWORD = BASE_URL + "mentors/password";
@@ -26,10 +29,16 @@ public class MentorsAPI extends Base {
         SerenityRest.given();
     }
 
-    @Step("Get list mentors with id")
-    public void setGetListUsersPage(int id){
+    @Step("Get all list mentors with valid parameter")
+    public void setGetAllListMentorsPage(int id){
         SerenityRest.given()
                 .pathParam("id",id);
+    }
+
+    @Step("Get all list mentors with invalid parameter")
+    public void setGetAllListMentorsInvalidParam(String id){
+        SerenityRest.given()
+                .pathParam("string",id);
     }
 
     @Step("Get all list mentors by top week")
@@ -38,7 +47,7 @@ public class MentorsAPI extends Base {
     }
 
     @Step("Get single mentors")
-    public void setGetSingleUser(){
+    public void setGetSingleMentorsProfile(){
         SerenityRest.given();
     }
 
@@ -55,7 +64,7 @@ public class MentorsAPI extends Base {
     }
 
     @Step("Get single mentor with blank id")
-    public void getSingleCommentBlank(){
+    public void getSingleMentorBlankId(){
         SerenityRest.given();
     }
 
@@ -120,17 +129,11 @@ public class MentorsAPI extends Base {
     }
 
     @Step("Put Update Mentors Password with Invalid JSON")
-    public void setPutUpdateMentorsPasswordWithInvalidJson(String put) {
-        SerenityRest.given().header("Authorization","Bearer "+TOKEN)
-                .pathParam("put", put)
-                .contentType("multipart/form-data")
-                .multiPart("name", "Aldan Maulana Fajri")
-                .multiPart("email", "aldanmaulanaf")
-                .multiPart("sex", "Male")
-                .multiPart("phone", "1243424")
-                .multiPart("address", "Nganjuk")
-                .multiPart("instagram", "")
-                .multiPart("about", "senior musical teacher");
+    public void setPutUpdateMentorsPasswordWithInvalidJson(File json) {
+        SerenityRest.given()
+                .header("Authorization","Bearer "+TOKEN)
+                .contentType(ContentType.JSON)
+                .body(json);
     }
 
     @Step("Put Update Mentors Password with Valid JSON no Auth")
@@ -141,7 +144,7 @@ public class MentorsAPI extends Base {
     }
 
     @Step("Delete mentors with auth")
-    public void setDeleteCommentWithAuth(){
+    public void setDeleteMentorsWithAuth(){
         SerenityRest.given().header("Authorization","Bearer "+TOKEN);
     }
 

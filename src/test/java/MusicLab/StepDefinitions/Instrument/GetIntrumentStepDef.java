@@ -24,17 +24,17 @@ public class GetIntrumentStepDef {
 
     @Given("Get all list instrument")
     public void getAllListInstrument() {
-        InstrumentAPI.setGetAllListInstrument();
+        instrumentAPI.setGetAllListInstrument();
     }
 
     @Given("Get single instrument with valid ID {int}")
     public void getSingleInstrumentWithValidId(int id) {
-        InstrumentAPI.getSingleInstrumentValidId(id);
+        instrumentAPI.getSingleInstrumentValidId(id);
     }
 
     @Given("Get single instrument with invalid ID {string}")
     public void getSingleInstrumentWithInvalidId(String invalidid) {
-        InstrumentAPI.getSingleInstrumentInvalidId(invalidid);
+        instrumentAPI.getSingleInstrumentInvalidId(invalidid);
     }
 
     @When("Send request get all list instrument")

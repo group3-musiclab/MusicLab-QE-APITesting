@@ -24,19 +24,19 @@ public class PostCreateInstrumentStepDef {
     @Given("Post create mentor instrument with valid JSON")
     public void postCreateMentorInstrumentWithValidJson() {
         File jsonReq = new File(ReqBodyInstrument.REQ_BODY + "ValidPostCreateInstrumenJsonReqBody.json");
-        InstrumentAPI.setPostMentorsInstrument(jsonReq);
+        instrumentAPI.setPostMentorsInstrument(jsonReq);
     }
 
     @Given("Post create mentor instrument with invalid JSON")
     public void postCreateMentorInstrumentWithInvalidJson() {
         File jsonReq = new File(ReqBodyInstrument.REQ_BODY + "InvalidPostCreateInstrumenJsonReqBody.json");
-        InstrumentAPI.setPostCreateInstrumentInvalidJSON(jsonReq);
+        instrumentAPI.setPostCreateInstrumentInvalidJSON(jsonReq);
     }
 
     @Given("Post create mentor instrument with valid JSON no Auth")
     public void postCreateMentorInstrumentWithValidJsonNoAuth() {
         File jsonReq = new File(ReqBodyInstrument.REQ_BODY + "ValidPostCreateInstrumenJsonReqBody.json");
-        InstrumentAPI.setPostCreateInstrumentNoAuth(jsonReq);
+        instrumentAPI.setPostCreateInstrumentNoAuth(jsonReq);
     }
 
     @When("Send post create mentor instrument")
@@ -55,13 +55,13 @@ public class PostCreateInstrumentStepDef {
     }
 
     @And("Response should be {string}")
-    public void responsBodyShouldBeNameEmailAndBody(String body) {
+    public void responsBodyShouldBeBody(String body) {
         SerenityRest.then()
                 .body(API_Responses.BODY_MESSAGE,equalTo(body));
     }
 
-    @And("Validate post create comment resources json schema")
-    public void validatePostCreateCommentResourcesJsonSchema() {
+    @And("Validate post create instrument resources json schema")
+    public void validatePostCreateInstrumentResourcesJsonSchema() {
         File jsonSchema = new File(JsonSchemaInstrument.SCHEMA +"PostCreateInstrumentJsonSchema.json");
         SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(jsonSchema));
     }

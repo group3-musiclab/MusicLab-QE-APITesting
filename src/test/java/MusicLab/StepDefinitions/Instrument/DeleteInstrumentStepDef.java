@@ -16,22 +16,22 @@ public class DeleteInstrumentStepDef {
 
     @Given("Delete instrument with valid ID {int}")
     public void deleteInstrumenValidId(int instrument_id) {
-        InstrumentAPI.setDeleteInstrumentWithAuth(instrument_id);
+        instrumentAPI.setDeleteInstrumentWithAuth(instrument_id);
     }
 
     @Given("Delete instrument with invalid ID {string}")
     public void deleteInstrumentInvalidId(String id) {
-        InstrumentAPI.setDeleteInstrumentInvalidParameterWithAuth(id);
+        instrumentAPI.setDeleteInstrumentInvalidParameterWithAuth(id);
     }
 
     @Given("Delete instrument with valid ID {int} no auth")
     public void deleteInstrumentWithValidIdNoAuth(int id) {
-        InstrumentAPI.setDeleteInstrumentWithoutAuth(id);
+        instrumentAPI.setDeleteInstrumentWithoutAuth(id);
     }
 
     @Given("Delete instrument with blank ID {}")
     public void deleteInstrumentWithBlankId() {
-        InstrumentAPI.setDeleteInstrumentBlankParameterWithAuth();
+        instrumentAPI.setDeleteInstrumentBlankParameterWithAuth();
     }
 
     @When("Send request delete instrument")

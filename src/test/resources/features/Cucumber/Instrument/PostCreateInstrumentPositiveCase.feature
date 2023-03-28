@@ -6,4 +6,4 @@ Feature: [MusicLab-API] Post Feature Instrument
     When Send post create mentor instrument
     Then Status code should be 201 Create
     Then Response should be "message: success add mentor instrument"
-    And Validate post create comment resources json schema
+    And Validate post create instrument resources json schema
