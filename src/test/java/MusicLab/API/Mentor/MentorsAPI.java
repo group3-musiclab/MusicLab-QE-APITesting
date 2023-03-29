@@ -14,8 +14,9 @@ public class MentorsAPI extends Base {
 
     public static File imageFile = new File("image.jpg");
     public static  String TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2ODEyNzk3NTgsInJvbGUiOiJNZW50b3IiLCJ1c2VySWQiOjE5fQ.DMXgj-ACiPMZqmbDeGeNTJOUz5O9-rxdftSqnWxCRJA";
-    public static  String CERTIFICATE_FILE = JSON_REQ_BODY_USER+"Mentor/pngtree-islamic-graduation-certificate-template-png-image_3600814.jpg";
-    public static  String AVATAR_FILE = JSON_REQ_BODY_USER+"Mentor/1e1c3e4adbd53afaa0b7f2f999c46887.jpg";
+    public static  String CERTIFICATE_FILE = JSON_REQ_BODY_USER+"Mentor/NormalCertificate.jpg";
+    public static  String AVATAR_FILE = JSON_REQ_BODY_USER+"Mentor/NormalAvatar.jpg";
+    public static  String OVERSIZE_FILE = JSON_REQ_BODY_USER+"Mentor/OverSizeImage.jpg";
     public static String GET_ALL_LIST_MENTORS = BASE_URL + "mentors";
     public static String GET_ALL_LIST_MENTORS_WITH_VALID_PARAM = BASE_URL + "mentors?page={id}";
     public static String GET_ALL_LIST_MENTORS_WITH_INVALID_PARAM = BASE_URL + "mentors?page={string}";
@@ -84,6 +85,16 @@ public class MentorsAPI extends Base {
                 .multiPart("certificate_file", new File(CERTIFICATE_FILE), "image/jpeg");
     }
 
+    @Step("Post Create Mentors Credential with over-size image/jpg")
+    public void setPostCreateMentorsCredentialWithOverSizeImage(String credentials) {
+        SerenityRest.given().header("Authorization","Bearer "+TOKEN)
+                .pathParam("credentials", credentials)
+                .contentType("multipart/form-data")
+                .multiPart("type", "International")
+                .multiPart("name", "Guitar Master")
+                .multiPart("certificate_file", new File(OVERSIZE_FILE), "image/jpeg");
+    }
+
     @Step("Post Create Mentors Credential with invalid JSON")
     public void setPostCreateMentorsCredentialInvalidJSON(File json) {
         SerenityRest.given().header("Authorization","Bearer "+TOKEN)
@@ -112,6 +123,22 @@ public class MentorsAPI extends Base {
                 .multiPart("instagram", "@aldanmaulana")
                 .multiPart("about", "Senior Musical Teacher")
                 .multiPart("avatar_file", new File(AVATAR_FILE), "image/jpeg");
+    }
+
+    @Step("Put Update Mentors Profile with over-size image/jpg")
+    public void setPutUpdateMentorsProfileWithOverSizeImage(String mentors) {
+        SerenityRest.given()
+                .header("Authorization","Bearer "+TOKEN)
+                .pathParam("mentors", mentors)
+                .contentType("multipart/form-data")
+                .multiPart("name", "Aldan Maulana Fajri")
+                .multiPart("email", "mafa.alfa@gmail.com")
+                .multiPart("sex", "Male")
+                .multiPart("phone", "081231656236")
+                .multiPart("address", "Nganjuk")
+                .multiPart("instagram", "@aldanmaulana")
+                .multiPart("about", "Senior Musical Teacher")
+                .multiPart("avatar_file", new File(OVERSIZE_FILE), "image/jpeg");
     }
 
     @Step("Put Update Mentors Profile with Invalid JSON")

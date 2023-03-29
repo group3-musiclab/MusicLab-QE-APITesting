@@ -1,4 +1,4 @@
-@GetSingleMentors @FeatureInstrument @BilalProject @Capstone
+@GetSingleMentors @FeatureInstrument @BilalProject @Capstone @GetSingleMentorsPositiveCase
 Feature: [MusicLab-API] Get Feature Mentors
 
   Scenario: [Positive Case] Get Single Mentor Profile

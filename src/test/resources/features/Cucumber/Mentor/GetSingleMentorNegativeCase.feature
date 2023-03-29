@@ -1,4 +1,4 @@
-@GetSingleMentors @FeatureInstrument @BilalProject @Capstone
+@GetSingleMentors @FeatureInstrument @BilalProject @Capstone @GetSingleMentorsNegativeCase
 Feature: [MusicLab-API] Get Feature Mentors
 
   Scenario Outline: [Negative Case] Get Single List Mentors With Invalid ID

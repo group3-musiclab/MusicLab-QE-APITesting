@@ -1,4 +1,4 @@
-@PutMentorPassword @FeatureInstrument @BilalProject @Capstone
+@PutMentorPassword @FeatureInstrument @BilalProject @Capstone @PutMentorPasswordPositiveCase
 Feature: [MusicLab-API] Put Feature Mentors
 
   Scenario: [Positive Case] Put Update Mentors Password With Valid JSON

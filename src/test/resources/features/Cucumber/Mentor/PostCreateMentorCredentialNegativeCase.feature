@@ -1,4 +1,4 @@
-@PostMentorsCredential @FeatureInstrument @BilalProject @Capstone
+@PostMentorsCredential @FeatureInstrument @BilalProject @Capstone @NegativePostMentorCredential
 Feature: [MusicLab-API] Post Feature Mentors
 
   @PostInvalidJSON
@@ -12,3 +12,9 @@ Feature: [MusicLab-API] Post Feature Mentors
     Given Post create mentor credential with valid JSON no Auth
     When Send post create mentor credential
     Then Status code should be 401 Unauthorized
+
+  @PostInvalidImage
+  Scenario: [Negative Case] Post Create Mentors Credential With Oversize Image
+    Given Post create mentor credential with oversize image
+    When Send post create mentor credential
+    Then Status code should be 500 Internal server error

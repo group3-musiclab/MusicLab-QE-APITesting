@@ -1,4 +1,4 @@
-@DeleteMentors @FeatureInstrument @BilalProject @Capstone
+@DeleteMentors @FeatureInstrument @BilalProject @Capstone @DeleteMentorsPositiveCase
 Feature: [MusicLab-API] Delete Feature Mentors
 
   Scenario: [Positive Case] Delete Mentors With Authorized

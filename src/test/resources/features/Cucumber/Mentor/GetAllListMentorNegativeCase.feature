@@ -1,4 +1,4 @@
-@GetAllListMentors @FeatureInstrument @BilalProject @Capstone
+@GetAllListMentors @FeatureInstrument @BilalProject @Capstone @GetAllListMentorsNegativeCase
 Feature: [MusicLab-API] Get Feature Mentors
 
   Scenario Outline: [Negative Case] Get All List Mentors With Invalid Parameters

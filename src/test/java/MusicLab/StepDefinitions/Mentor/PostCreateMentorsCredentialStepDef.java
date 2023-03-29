@@ -31,6 +31,11 @@ public class PostCreateMentorsCredentialStepDef {
         mentorsAPI.setPostCreateMentorsCredentialValidJSON("credentials");
     }
 
+    @Given("Post create mentor credential with oversize image")
+    public void postCreateMentorCredentialWithOversizeImage(){
+        mentorsAPI.setPostCreateMentorsCredentialWithOverSizeImage("credentials");
+    }
+
     @Given("Post create mentor credential with invalid JSON")
     public void postCreateMentorCredentialWithInvalidJson() {
         File jsonReq = new File(ReqBodyMentor.REQ_BODY + "InvalidPostCreateMentorsCredentialJsonReqBody.json");

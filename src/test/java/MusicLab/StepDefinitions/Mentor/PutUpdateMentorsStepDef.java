@@ -25,6 +25,11 @@ public class PutUpdateMentorsStepDef {
         mentorsAPI.setPutUpdateMentorsProfileWithValidJson("mentors");
     }
 
+    @Given("Put update mentors profile with oversize image")
+    public void putUpdateMentorsProfileWithOversizeImage() {
+        mentorsAPI.setPutUpdateMentorsProfileWithOverSizeImage("mentors");
+    }
+
     @Given("Put update mentors profile with invalid json")
     public void putUpdateMentorsProfileInvalidJson() {
         File jsonReq = new File(ReqBodyMentor.REQ_BODY + "InvalidPutUpdateMentorsProfileJsonReqBody.json");

@@ -1,4 +1,4 @@
-@GetAllListMentors @FeatureInstrument @BilalProject @Capstone
+@GetAllListMentors @FeatureInstrument @BilalProject @Capstone @GetAllListMentorsPositiveCase
 Feature: [MusicLab-API] Get Feature Mentors
 
   Scenario: [Positive Case] Get All List Mentors Normal Condition
