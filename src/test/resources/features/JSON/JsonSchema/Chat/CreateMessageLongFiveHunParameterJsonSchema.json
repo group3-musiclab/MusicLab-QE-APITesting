@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "mentor_id": {
+      "type": "integer"
+    },
+    "student_id": {
+      "type": "integer"
+    },
+    "chat": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "mentor_id",
+    "student_id",
+    "chat"
+  ]
+}

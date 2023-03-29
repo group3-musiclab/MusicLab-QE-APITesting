@@ -1,2 +1,5 @@
-package MusicLab.API.Chat;public class ChatAPIAutomation {
+package MusicLab.API.Chat;
+
+public class ChatAPIAutomation {
+
 }
