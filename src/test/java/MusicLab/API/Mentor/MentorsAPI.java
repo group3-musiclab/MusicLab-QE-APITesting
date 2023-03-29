@@ -25,7 +25,7 @@ public class MentorsAPI extends Base {
     public static String GET_SINGLE_MENTORS_PROFILE_BY_ID = BASE_URL + "mentors/{mentor_id}";
     public static String GET_SINGLE_MENTORS_PROFILE_BY_INVALID_ID = BASE_URL + "mentors/{string}";
     public static String GET_SINGLE_MENTORS_PROFILE_BY_BLANK_ID = BASE_URL + "mentors/{}";
-    public static String POST_CREATED_MENTORS_CREDENTIAL = BASE_URL + "mentors/{credentials}";
+    public static String POST_CREATED_MENTORS_CREDENTIAL = BASE_URL + "mentors/credentials";
     public static String PUT_UPDATE_MENTORS_PROFILE = BASE_URL + "{mentors}";
     public static String PUT_UPDATE_MENTORS_PASSWORD = BASE_URL + "mentors/password";
     public static String DELETE_MENTORS = BASE_URL + "mentors";
@@ -76,9 +76,8 @@ public class MentorsAPI extends Base {
     }
 
     @Step("Post Create Mentors Credential with valid JSON")
-    public void setPostCreateMentorsCredentialValidJSON(String credentials) {
+    public void setPostCreateMentorsCredentialValidJSON() {
         SerenityRest.given().header("Authorization","Bearer "+TOKEN)
-                .pathParam("credentials", credentials)
                 .contentType("multipart/form-data")
                 .multiPart("type", "International")
                 .multiPart("name", "Guitar Master")
@@ -86,9 +85,8 @@ public class MentorsAPI extends Base {
     }
 
     @Step("Post Create Mentors Credential with over-size image/jpg")
-    public void setPostCreateMentorsCredentialWithOverSizeImage(String credentials) {
+    public void setPostCreateMentorsCredentialWithOverSizeImage() {
         SerenityRest.given().header("Authorization","Bearer "+TOKEN)
-                .pathParam("credentials", credentials)
                 .contentType("multipart/form-data")
                 .multiPart("type", "International")
                 .multiPart("name", "Guitar Master")

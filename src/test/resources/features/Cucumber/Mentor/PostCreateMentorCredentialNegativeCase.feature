@@ -6,6 +6,7 @@ Feature: [MusicLab-API] Post Feature Mentors
     Given Post create mentor credential with invalid JSON
     When Send post create mentor credential
     Then Status code should be 500 Internal server error
+    And Validate post create mentor credential invalid json schema
 
   @PostValidJSONNoAuth
   Scenario: [Negative Case] Post Create Mentors Credential With Valid JSON No Auth
