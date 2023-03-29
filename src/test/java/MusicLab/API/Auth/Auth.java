@@ -7,11 +7,11 @@ import net.thucydides.core.annotations.Step;
 
 import java.io.File;
 
-public class LoginMentor extends Base {
+public class Auth extends Base {
     public static String LOGIN = BASE_URL + "login";
     public static String REGISTER = BASE_URL + "register";
 
-    @Step("Login")
+    @Step("Auth")
     public void login(File json){
         SerenityRest.given().contentType(ContentType.JSON).body(json);
     }

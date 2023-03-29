@@ -1,7 +1,6 @@
 package MusicLab.StepDefinitions.Auth;
 
-import MusicLab.API.Auth.LoginMentor;
-import MusicLab.Base;
+import MusicLab.API.Auth.Auth;
 import MusicLab.utilities.API_Responses;
 import MusicLab.utilities.Auth.JsonSchemaAuth;
 import MusicLab.utilities.Auth.ReqBodyAuth;
@@ -20,17 +19,17 @@ import static org.hamcrest.Matchers.equalTo;
 public class LoginMentorSteps {
 
     @Steps
-    LoginMentor loginMentor;
+    Auth auth;
 
-    @Given("Mentor login with valid json")
+    @Given("Mentor auth with valid json")
     public void mentorLoginWithValidJson() {
         File json = new File(ReqBodyAuth.MENTOR);
-        loginMentor.login(json);
+        auth.login(json);
     }
 
-    @When("Send request post login")
+    @When("Send request post auth")
     public void sendRequestPostLogin() {
-        SerenityRest.when().post(LoginMentor.LOGIN);
+        SerenityRest.when().post(Auth.LOGIN);
     }
 
     @Then("Status code should {int} OK")
@@ -43,9 +42,30 @@ public class LoginMentorSteps {
         SerenityRest.then().body(API_Responses.message, equalTo(message));
     }
 
-    @And("Validate login json schema")
+    @And("Validate auth json schema")
     public void validateLoginJsonSchema() {
         File json = new File(JsonSchemaAuth.MESSAGE);
         SerenityRest.then().body(JsonSchemaValidator.matchesJsonSchema(json));
+    }
+
+
+//    Invalid auth
+    @Given("Mentor auth with invalid json")
+    public void mentorLoginWithInvalidJson() {
+        File json = new File(ReqBodyAuth.MENTOR_INVALID);
+        auth.login(json);
+    }
+
+    @Then("Status code should {int} Bad Request")
+    public void statusCodeShouldBadRequest(int code) {
+        SerenityRest.then().statusCode(code);
+    }
+
+
+//    Blank auth
+    @Given("Mentor auth with blank json")
+    public void mentorLoginWithBlankJson() {
+        File json = new File(ReqBodyAuth.MENTOR_BLANK);
+        auth.login(json);
     }
 }
