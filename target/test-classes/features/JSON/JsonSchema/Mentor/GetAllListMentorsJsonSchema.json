@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "avatar": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "instrument_name": {
+              "type": "string"
+            },
+            "about": {
+              "type": "string"
+            },
+            "instagram": {
+              "type": "string"
+            },
+            "rating": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "id",
+            "avatar",
+            "name",
+            "instrument_name",
+            "about",
+            "instagram",
+            "rating"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "avatar": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "instrument_name": {
+              "type": "string"
+            },
+            "about": {
+              "type": "string"
+            },
+            "instagram": {
+              "type": "string"
+            },
+            "rating": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "id",
+            "avatar",
+            "name",
+            "instrument_name",
+            "about",
+            "instagram",
+            "rating"
+          ]
+        }
+      ]
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "data",
+    "message"
+  ]
+}

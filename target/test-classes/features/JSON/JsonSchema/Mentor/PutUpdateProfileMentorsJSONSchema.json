@@ -2,35 +2,11 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "name": {
-      "type": "string"
-    },
-    "email": {
-      "type": "string"
-    },
-    "sex": {
-      "type": "string"
-    },
-    "phone": {
-      "type": "string"
-    },
-    "address": {
-      "type": "string"
-    },
-    "instagram": {
-      "type": "string"
-    },
-    "about": {
+    "message": {
       "type": "string"
     }
   },
   "required": [
-    "name",
-    "email",
-    "sex",
-    "phone",
-    "address",
-    "instagram",
-    "about"
+    "message"
   ]
 }

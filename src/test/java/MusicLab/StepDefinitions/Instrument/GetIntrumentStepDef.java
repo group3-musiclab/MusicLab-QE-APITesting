@@ -48,7 +48,7 @@ public class GetIntrumentStepDef {
     }
 
     @Then("Status code should be {int} OK")
-    public void statusCodeShouldBeNotFound(int ok) {
+    public void statusCodeShouldBeOK(int ok) {
         SerenityRest.then().statusCode(ok);
     }
 

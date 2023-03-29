@@ -44,24 +44,19 @@ public class GetAllMentorsStepDef {
         SerenityRest.when().get(MentorsAPI.GET_ALL_LIST_MENTORS);
     }
 
-    @When("Send request get all list mentors with parameter")
-    public void sendRequestGetAllListMentrosWithParameter() {
-        SerenityRest.when().get(MentorsAPI.GET_ALL_LIST_MENTORS_WITH_PARAM);
+    @When("Send request get all list mentors with valid parameter")
+    public void sendRequestGetAllListMentrosWithValidParameter() {
+        SerenityRest.when().get(MentorsAPI.GET_ALL_LIST_MENTORS_WITH_VALID_PARAM);
+    }
+
+    @When("Send request get all list mentors with invalid parameter")
+    public void sendRequestGetAllListMentrosWithInvalidParameter() {
+        SerenityRest.when().get(MentorsAPI.GET_ALL_LIST_MENTORS_WITH_INVALID_PARAM);
     }
 
     @When("Send request get all list mentors top week")
     public void sendRequestGetAllListMentrosTopWeek() {
         SerenityRest.when().get(MentorsAPI.GET_ALL_LIST_MENTORS_BY_TOPWEEK);
-    }
-
-    @Then("Status code should be {int} OK")
-    public void statusCodeShouldBeNotFound(int ok) {
-        SerenityRest.then().statusCode(ok);
-    }
-
-    @Then("Status code should be {int} Bad Request")
-    public void statusCodeShouldBeBadRequest(int bad) {
-        SerenityRest.then().statusCode(bad);
     }
 
     @And("Validate get all list mentors json schema")

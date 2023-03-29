@@ -3,7 +3,7 @@ Feature: [MusicLab-API] Get Feature Mentors
 
   Scenario Outline: [Negative Case] Get All List Mentors With Invalid Parameters
     Given Get all list mentors with invalid parameters "<page>"
-    When Send request get single mentors with invalid id
+    When Send request get all list mentors with invalid parameter
     Then Status code should be 400 Bad Request
     Examples:
       | page        |

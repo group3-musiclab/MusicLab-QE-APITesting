@@ -1,4 +1,4 @@
-@PostMentorsCredential @FeatureInstrument @BilalProject @Capstone
+@PostMentorsCredential @FeatureInstrument @BilalProject @Capstone @PositivePostMentorCredential
 Feature: [MusicLab-API] Post Feature Mentors
 
   Scenario: [Positive Case] Post Create Mentors Credential With Valid JSON

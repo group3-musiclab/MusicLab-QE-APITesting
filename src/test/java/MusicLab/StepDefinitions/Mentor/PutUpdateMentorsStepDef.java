@@ -21,13 +21,14 @@ public class PutUpdateMentorsStepDef {
 
     @Given("Put update mentors profile with valid json")
     public void putUpdateMentorsProfileValidJson() {
-        File jsonReq = new File(ReqBodyMentor.REQ_BODY + "ValidPutUpdateMentorsProfileJsonReqBody.json");
-        mentorsAPI.setPutUpdateMentorsProfileWithValidJson(jsonReq);
+        //File jsonReq = new File(ReqBodyMentor.REQ_BODY + "ValidPutUpdateMentorsProfileJsonReqBody.json");
+        mentorsAPI.setPutUpdateMentorsProfileWithValidJson("mentors");
     }
 
     @Given("Put update mentors profile with invalid json")
-    public void putUpdateMentorsProfileInvalidJson(String put) {
-        mentorsAPI.setPutUpdateMentorsProfileWithInvalidJson(put);
+    public void putUpdateMentorsProfileInvalidJson() {
+        File jsonReq = new File(ReqBodyMentor.REQ_BODY + "InvalidPutUpdateMentorsProfileJsonReqBody.json");
+        mentorsAPI.setPutUpdateMentorsProfileWithInvalidJson(jsonReq);
     }
 
     @Given("Put update mentors profile with valid json no auth")
@@ -56,12 +57,14 @@ public class PutUpdateMentorsStepDef {
 
     @When("Send put update mentors Profile")
     public void sendPutUpdateMentorsProfile() {
-        SerenityRest.when().put(MentorsAPI.PUT_UPDATE_MENTORS_PROFILE);
+        SerenityRest.when()
+                .put(MentorsAPI.PUT_UPDATE_MENTORS_PROFILE);
     }
 
     @When("Send put update mentors Password")
     public void sendPutUpdateMentorsPassword() {
-        SerenityRest.when().put(MentorsAPI.PUT_UPDATE_MENTORS_PASSWORD);
+        SerenityRest.when()
+                .put(MentorsAPI.PUT_UPDATE_MENTORS_PASSWORD);
     }
 
     @And("Validate update mentors profile json schema")
@@ -73,6 +76,7 @@ public class PutUpdateMentorsStepDef {
     @And("Validate update mentors password json schema")
     public void validatePutUpdateMentorPasswordJsonSchema() {
         File jsonSchema = new File(JsonSchemaMentor.SCHEMA +"PutUpdatePasswordMentorsJSONSchema.json");
-        SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(jsonSchema));
+        SerenityRest.then().assertThat()
+                .body(JsonSchemaValidator.matchesJsonSchema(jsonSchema));
     }
 }

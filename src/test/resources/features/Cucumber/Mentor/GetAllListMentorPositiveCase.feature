@@ -9,7 +9,7 @@ Feature: [MusicLab-API] Get Feature Mentors
 
   Scenario: [Positive Case] Get All List Mentors With Valid Parameters
     Given Get all list mentors with valid parameters 1
-    When Send request get all list mentors with parameter
+    When Send request get all list mentors with valid parameter
     Then Status code should be 200 OK
 
   Scenario: [Positive Case] Get All List Mentors Top Week
