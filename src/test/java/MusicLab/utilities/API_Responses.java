@@ -7,4 +7,6 @@ public class API_Responses {
     public static final String EMAIL = "email";
     public static final String ROLE = "data.role";
     public static final String NAME = "data.name";
+    public static final String MENTOR_ID = "mentor_id";
+    public static final String CLASS_ID = "class_id";
 }
