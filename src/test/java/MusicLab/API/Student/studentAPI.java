@@ -31,7 +31,7 @@ public class studentAPI extends Base {
     }
     @Step("Put edit student password")
     public void putStudentPassword(File json){
-        SerenityRest.given().headers("Authorization","Bearer "+BEARER_TOKENSP)
+        SerenityRest.given().headers("Authorization","Bearer "+BEARER_TOKENA)
                 .contentType(ContentType.JSON)
                 .body(json);
     }

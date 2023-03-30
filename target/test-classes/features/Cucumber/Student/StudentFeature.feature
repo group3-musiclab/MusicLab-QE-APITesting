@@ -6,48 +6,48 @@ Feature: MusicLab API Automation Testing Capstone Project
     Then Status code should be 200 OK
     And Validate get student data json schema
 
-  @Capstone @Positive @PutClass
+  @Capstone @Positive @PutStudentProfile
   Scenario: Put or edit student profile with valid parameters
     Given Put edit student profile with valid parameter in json body
     When Send request put edit student profile
     Then Status code should be 200 OK
     And Validate json schema message
 
-  @Capstone @Positive @PutClass
+  @Capstone @Positive @PutStudentProfile
   Scenario: Put or edit student profile with invalid parameters
     Given Put edit student profile with invalid parameter in json body
     When Send request put edit student profile
     Then Status code should be 400 Bad Request
     And Validate json schema message
 
-  @Capstone @Negative @PutClass
+  @Capstone @Negative @PutStudentProfile
   Scenario: Put or edit a class null parameter
     Given Put edit student profile with null parameter in JSON body
     When Send request put edit student profile null parameter
     Then Status code should be 400 Bad Request
     And Validate json schema message
 
-  @Capstone @Positive @DeleteClass
+  @Capstone @Positive @DeleteStudent
   Scenario: Deactive student
     Given Delete student to deactive profile
     When Send request delete student
     Then Status code should be 200 OK
 
-  @Capstone @Positive @PutClass
+  @Capstone @Positive @PutStudentPassword
   Scenario: Put or edit student password with valid parameters
     Given Put edit student password with valid parameter in json body
     When Send request put edit student password
     Then Status code should be 201 Created
     And Validate json schema message
 
-  @Capstone @Positive @PutClass
+  @Capstone @Negative @PutStudentPassword
   Scenario: Put or edit student password with invalid parameters
     Given Put edit student password with invalid parameter in json body
     When Send request put edit student password
     Then Status code should be 400 Bad Request
     And Validate json schema message
 
-  @Capstone @Negative @PutClass
+  @Capstone @Negative @PutStudentPassword
   Scenario: Put or edit student password null parameter
     Given Put edit student password with null parameter in JSON body
     When Send request put edit student password null parameter

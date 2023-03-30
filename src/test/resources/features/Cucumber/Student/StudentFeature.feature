@@ -37,10 +37,10 @@ Feature: MusicLab API Automation Testing Capstone Project
   Scenario: Put or edit student password with valid parameters
     Given Put edit student password with valid parameter in json body
     When Send request put edit student password
-    Then Status code should be 201 Created
+    Then Status code should be 200 OK
     And Validate json schema message
 
-  @Capstone @Positive @PutStudentPassword
+  @Capstone @Negative @PutStudentPassword
   Scenario: Put or edit student password with invalid parameters
     Given Put edit student password with invalid parameter in json body
     When Send request put edit student password

@@ -67,3 +67,4 @@ Feature: MusicLab API Automation Testing Capstone Project
     Given Delete class with token and class_id 0
     When Send request delete class
     Then Status code should be 200 OK
+    And Validate put update class json schema

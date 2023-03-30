@@ -14,5 +14,7 @@ public class Base {
     public static final String BEARER_TOKENSPD= "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2ODEzOTUzOTEsInJvbGUiOiJTdHVkZW50IiwidXNlcklkIjo0NX0.9rNw-IIQjVP8Jb9gbGFKZY5D2mk6HV6vbUjfZNS8R-E";
     //deleteclass
     public static final String BEARER_TOKENSPDC= "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2ODEzOTY5MjQsInJvbGUiOiJNZW50b3IiLCJ1c2VySWQiOjM1fQ.XVT3boWKxE2-R41kAN967pSPDiTtVTMzVJgiVclImcQ";
+    //updatepass punya mas Aldan
+    public static final String BEARER_TOKENA= "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2ODE0NTc2OTYsInJvbGUiOiJTdHVkZW50IiwidXNlcklkIjo0N30.KMJwusFjL3Jx8tOezsx3aHTvlIvsIixl2KKpNsINUN4";
 
 }
