@@ -73,7 +73,7 @@ public class PostCreateMentorsCredentialStepDef {
 
     @And("Validate post create mentor credential invalid json schema")
     public void validatePostCreateMentorCredentialsInvalidJsonSchema() {
-        File jsonSchema = new File(JsonSchemaMentor.SCHEMA +"PostCreateMentorsCredentialsInvalidJSONSchema.json");
+        File jsonSchema = new File(JsonSchemaMentor.SCHEMA +"PostCreateMentorsCredentialJSONSchema.json");
         SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(jsonSchema));
     }
 }
