@@ -24,9 +24,9 @@ public class GetAllMentorsStepDef {
         mentorsAPI.getAllListMentors();
     }
 
-    @Given("Get all list mentors with valid parameters {int}")
-    public void getAllListMentorsWithParameters(int id) {
-        mentorsAPI.setGetAllListMentorsPage(id);
+    @Given("Get all list mentors with valid parameters {string}")
+    public void getAllListMentorsWithParameters(String param) {
+        mentorsAPI.setGetAllListMentorsPage(param);
     }
 
     @Given("Get all list mentors with invalid parameters {string}")
@@ -44,14 +44,9 @@ public class GetAllMentorsStepDef {
         SerenityRest.when().get(MentorsAPI.GET_ALL_LIST_MENTORS);
     }
 
-    @When("Send request get all list mentors with valid parameter")
+    @When("Send request get all list mentors with parameters")
     public void sendRequestGetAllListMentrosWithValidParameter() {
-        SerenityRest.when().get(MentorsAPI.GET_ALL_LIST_MENTORS_WITH_VALID_PARAM);
-    }
-
-    @When("Send request get all list mentors with invalid parameter")
-    public void sendRequestGetAllListMentrosWithInvalidParameter() {
-        SerenityRest.when().get(MentorsAPI.GET_ALL_LIST_MENTORS_WITH_INVALID_PARAM);
+        SerenityRest.when().get(MentorsAPI.GET_ALL_LIST_MENTORS_WITH_PARAM);
     }
 
     @When("Send request get all list mentors top week")

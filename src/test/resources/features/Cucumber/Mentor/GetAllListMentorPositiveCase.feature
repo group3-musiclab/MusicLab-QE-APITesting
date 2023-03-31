@@ -7,10 +7,20 @@ Feature: [MusicLab-API] Get Feature Mentors
     Then Status code should be 200 OK
     And Validate get all list mentors json schema
 
-  Scenario: [Positive Case] Get All List Mentors With Valid Parameters
-    Given Get all list mentors with valid parameters 1
-    When Send request get all list mentors with valid parameter
+  @GetAllListWithParamPos
+  Scenario Outline: [Positive Case] Get All List Mentors With Valid Parameters
+    Given Get all list mentors with valid parameters "<param>"
+    When Send request get all list mentors with parameters
     Then Status code should be 200 OK
+    Examples:
+      | param                       |
+      | page=1                      |
+      | name=aldan                  |
+      | limit=6                     |
+      | genre=1                     |
+      | rating=1                    |
+      | qualification=international |
+      | instrument=1                |
 
   Scenario: [Positive Case] Get All List Mentors Top Week
     Given Get list mentors top week

@@ -2,10 +2,15 @@
 Feature: [MusicLab-API] Get Feature Mentors
 
   Scenario Outline: [Negative Case] Get All List Mentors With Invalid Parameters
-    Given Get all list mentors with invalid parameters "<page>"
-    When Send request get all list mentors with invalid parameter
+    Given Get all list mentors with invalid parameters "<param>"
+    When Send request get all list mentors with parameters
     Then Status code should be 400 Bad Request
     Examples:
-      | page        |
-      | %$^$        |
-      | 10000000000 |
+      | param                  |
+      | page=10000000000000000 |
+      | name=1231413           |
+      | limit=asdasdas         |
+      | genre=#%$#$%%          |
+      | rating=top             |
+      | qualification=^*^*&    |
+      | instrument=chuaks      |

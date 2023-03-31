@@ -18,8 +18,7 @@ public class MentorsAPI extends Base {
     public static  String AVATAR_FILE = JSON_REQ_BODY_USER+"Mentor/NormalAvatar.jpg";
     public static  String OVERSIZE_FILE = JSON_REQ_BODY_USER+"Mentor/OverSizeImage.jpg";
     public static String GET_ALL_LIST_MENTORS = BASE_URL + "mentors";
-    public static String GET_ALL_LIST_MENTORS_WITH_VALID_PARAM = BASE_URL + "mentors?page={id}";
-    public static String GET_ALL_LIST_MENTORS_WITH_INVALID_PARAM = BASE_URL + "mentors?page={string}";
+    public static String GET_ALL_LIST_MENTORS_WITH_PARAM = BASE_URL + "mentors?{parameters}";
     public static String GET_ALL_LIST_MENTORS_BY_TOPWEEK = BASE_URL + "mentors/topweek";
     public static String GET_SINGLE_MENTORS_PROFILE = BASE_URL + "mentors/profile";
     public static String GET_SINGLE_MENTORS_PROFILE_BY_ID = BASE_URL + "mentors/{mentor_id}";
@@ -37,15 +36,15 @@ public class MentorsAPI extends Base {
     }
 
     @Step("Get all list mentors with valid parameter")
-    public void setGetAllListMentorsPage(int id){
+    public void setGetAllListMentorsPage(String param){
         SerenityRest.given()
-                .pathParam("id",id);
+                .pathParam("parameters",param);
     }
 
     @Step("Get all list mentors with invalid parameter")
-    public void setGetAllListMentorsInvalidParam(String id){
+    public void setGetAllListMentorsInvalidParam(String param){
         SerenityRest.given()
-                .pathParam("string",id);
+                .pathParam("parameters",param);
     }
 
     @Step("Get all list mentors by top week")
