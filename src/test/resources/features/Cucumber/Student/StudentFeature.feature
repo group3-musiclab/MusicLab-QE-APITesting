@@ -13,7 +13,7 @@ Feature: MusicLab API Automation Testing Capstone Project
     Then Status code should be 200 OK
     And Validate json schema message
 
-  @Capstone @Positive @PutStudentProfile
+  @Capstone @Negative @PutStudentProfile
   Scenario: Put or edit student profile with invalid parameters
     Given Put edit student profile with invalid parameter in json body
     When Send request put edit student profile
