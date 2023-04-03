@@ -16,5 +16,10 @@ public class Base {
     public static final String BEARER_TOKENSPDC= "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2ODEzOTY5MjQsInJvbGUiOiJNZW50b3IiLCJ1c2VySWQiOjM1fQ.XVT3boWKxE2-R41kAN967pSPDiTtVTMzVJgiVclImcQ";
     //updatepass punya mas Aldan
     public static final String BEARER_TOKENA= "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2ODE0NTc2OTYsInJvbGUiOiJTdHVkZW50IiwidXNlcklkIjo0N30.KMJwusFjL3Jx8tOezsx3aHTvlIvsIixl2KKpNsINUN4";
+    public static final String JSON_REQ_BODY_TRANSACTION = DIR+"/src/test/resources/features/JSON/ReqBody/Transaction/";
+    public static final String JSON_SCHEMA_TRANSACTION = DIR+"/src/test/resources/features/JSON/JsonSchema/Transaction/";
+    public static final String JSON_REQ_BODY_CHAT = DIR+"/src/test/resources/features/JSON/ReqBody/Chat/";
+    public static final String JSON_SCHEMA_CHAT = DIR+"/src/test/resources/features/JSON/JsonSchema/Chat/";
+
 
 }
