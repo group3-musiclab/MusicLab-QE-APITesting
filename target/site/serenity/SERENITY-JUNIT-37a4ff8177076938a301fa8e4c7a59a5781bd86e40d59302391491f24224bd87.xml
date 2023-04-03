@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="16" name="Music Lab API Automation Testing" skipped="0" tests="21" time="24.71" timestamp="2023-04-03 02:44:11"><testcase name="Delete schedule with valid id"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)&#13;
+MusicLab.StepDefinitions.Schedule.GetMentorScheduleStepDef.shouldReturnStatusCodeOK(GetMentorScheduleStepDef.java:43)&#13;
+✽.Should return status code 200 OK(classpath:features/Cucumber/Schedule/DeleteMentorSchedule.feature:6)&#13;
+</system-err></testcase><testcase name="Delete schedule with invalid id"><failure message="1 expectation failed.&#10;JSON path message doesn't match.&#10;Expected: message: id param must number&#10;  Actual: id param must number&#10;" type="java.lang.AssertionError">1 expectation failed.
+JSON path message doesn't match.
+Expected: message: id param must number
+  Actual: id param must number
+</failure><system-err>1 expectation failed.
+JSON path message doesn't match.
+Expected: message: id param must number
+  Actual: id param must number
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)&#13;
+io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)&#13;
+MusicLab.StepDefinitions.Schedule.PostMentorScheduleStepDef.responseBodyShouldContainMessage(PostMentorScheduleStepDef.java:65)&#13;
+✽.Response body should contain message "message: id param must number"(classpath:features/Cucumber/Schedule/DeleteMentorSchedule.feature:19)&#13;
+</system-err></testcase><testcase name="Delete schedule with empty id"><failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;404&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;404&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)&#13;
+MusicLab.StepDefinitions.Schedule.GetMentorScheduleStepDef.shouldReturnStatusCodeBadRequest(GetMentorScheduleStepDef.java:63)&#13;
+✽.Should return status code 400 Bad Request(classpath:features/Cucumber/Schedule/DeleteMentorSchedule.feature:30)&#13;
+</system-err></testcase><testcase name="Delete schedule valid id no authorization"><failure message="1 expectation failed.&#10;JSON path message doesn't match.&#10;Expected: message: missing or malformed jwt&#10;  Actual: missing or malformed jwt&#10;" type="java.lang.AssertionError">1 expectation failed.
+JSON path message doesn't match.
+Expected: message: missing or malformed jwt
+  Actual: missing or malformed jwt
+</failure><system-err>1 expectation failed.
+JSON path message doesn't match.
+Expected: message: missing or malformed jwt
+  Actual: missing or malformed jwt
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)&#13;
+io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)&#13;
+MusicLab.StepDefinitions.Schedule.PostMentorScheduleStepDef.responseBodyShouldContainMessage(PostMentorScheduleStepDef.java:65)&#13;
+✽.Response body should contain message "message: missing or malformed jwt"(classpath:features/Cucumber/Schedule/DeleteMentorSchedule.feature:40)&#13;
+</system-err></testcase><testcase name="Get mentor schedule with valid id"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;201&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;201&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;201&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)&#13;
+MusicLab.StepDefinitions.Schedule.GetMentorScheduleStepDef.shouldReturnStatusCodeOK(GetMentorScheduleStepDef.java:43)&#13;
+✽.Should return status code 200 OK(classpath:features/Cucumber/Schedule/GetMentorSchedule.feature:6)&#13;
+</system-err></testcase><testcase name="Get mentor schedule with valid id no authorization"/><testcase name="Get mentor schedule with invalid id"><failure message="1 expectation failed.&#10;Expected status code &lt;404&gt; but was &lt;400&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;400&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;400&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)&#13;
+MusicLab.StepDefinitions.Schedule.GetMentorScheduleStepDef.shouldReturnStatusCodeNotFound(GetMentorScheduleStepDef.java:73)&#13;
+✽.Should return status code 404 Not Found(classpath:features/Cucumber/Schedule/GetMentorSchedule.feature:28)&#13;
+</system-err></testcase><testcase name="Post add mentor schedule with valid json"><failure message="1 expectation failed.&#10;JSON path message doesn't match.&#10;Expected: message: success post a schedule&#10;  Actual: success post a schedule&#10;" type="java.lang.AssertionError">1 expectation failed.
+JSON path message doesn't match.
+Expected: message: success post a schedule
+  Actual: success post a schedule
+</failure><system-err>1 expectation failed.
+JSON path message doesn't match.
+Expected: message: success post a schedule
+  Actual: success post a schedule
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)&#13;
+io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)&#13;
+MusicLab.StepDefinitions.Schedule.PostMentorScheduleStepDef.responseBodyShouldContainMessage(PostMentorScheduleStepDef.java:65)&#13;
+✽.Response body should contain message "message: success post a schedule"(classpath:features/Cucumber/Schedule/PostAddMentorSchedule.feature:7)&#13;
+</system-err></testcase><testcase name="Post add mentor schedule availability with valid json no authorization"><failure message="1 expectation failed.&#10;JSON path message doesn't match.&#10;Expected: message: missing or malformed jwt&#10;  Actual: missing or malformed jwt&#10;" type="java.lang.AssertionError">1 expectation failed.
+JSON path message doesn't match.
+Expected: message: missing or malformed jwt
+  Actual: missing or malformed jwt
+</failure><system-err>1 expectation failed.
+JSON path message doesn't match.
+Expected: message: missing or malformed jwt
+  Actual: missing or malformed jwt
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)&#13;
+io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)&#13;
+MusicLab.StepDefinitions.Schedule.PostAddMentorScheduleAvailabilityStepdef.responseBodyShouldContainMessageSuccess(PostAddMentorScheduleAvailabilityStepdef.java:36)&#13;
+✽.Response body should contain "message: missing or malformed jwt"(classpath:features/Cucumber/Schedule/PostAddMentorSchedule.feature:15)&#13;
+</system-err></testcase><testcase name="Post add mentor schedule with invalid json"><failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;500&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;500&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;500&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)&#13;
+MusicLab.StepDefinitions.Schedule.GetMentorScheduleStepDef.shouldReturnStatusCodeBadRequest(GetMentorScheduleStepDef.java:63)&#13;
+✽.Should return status code 400 Bad Request(classpath:features/Cucumber/Schedule/PostAddMentorSchedule.feature:21)&#13;
+</system-err></testcase><testcase name="Post add mentor schedule with empty json"><error message="F:\AA_DOWNLOAD\CAPSTONE_PROJECT_API\MusicLab-QE-APITesting\src\test\resources\features\JSON\ReqBody\Schedule\PostAddMentorScheduleWithEmptyJsonJsonReqBody.json (The system cannot find the file specified)" type="java.io.FileNotFoundException">F:\AA_DOWNLOAD\CAPSTONE_PROJECT_API\MusicLab-QE-APITesting\src\test\resources\features\JSON\ReqBody\Schedule\PostAddMentorScheduleWithEmptyJsonJsonReqBody.json (The system cannot find the file specified)</error><system-err>F:\AA_DOWNLOAD\CAPSTONE_PROJECT_API\MusicLab-QE-APITesting\src\test\resources\features\JSON\ReqBody\Schedule\PostAddMentorScheduleWithEmptyJsonJsonReqBody.json (The system cannot find the file specified)&#13;
+io.restassured.internal.support.FileReader.readToString(FileReader.groovy:23)&#13;
+io.restassured.internal.http.EncoderRegistry.toString(EncoderRegistry.java:461)&#13;
+io.restassured.internal.http.EncoderRegistry.encodeJSON(EncoderRegistry.java:287)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+groovy.lang.MetaClassImpl.invokeMethodClosure(MetaClassImpl.java:1047)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1141)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)&#13;
+groovy.lang.Closure.call(Closure.java:412)&#13;
+io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:345)&#13;
+io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1181)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:818)&#13;
+groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)&#13;
+io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:818)&#13;
+groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)&#13;
+io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:818)&#13;
+groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)&#13;
+io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:175)&#13;
+net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.executeCall(RequestSpecificationDecorated.java:309)&#13;
+net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.execute(RequestSpecificationDecorated.java:268)&#13;
+net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.post(RequestSpecificationDecorated.java:120)&#13;
+net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.post(RequestSpecificationDecorated.java:38)&#13;
+MusicLab.StepDefinitions.Schedule.PostMentorScheduleStepDef.sendRequestPostAddMentorScheduleEmptyJson(PostMentorScheduleStepDef.java:103)&#13;
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)&#13;
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:64)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:104)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:73)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)&#13;
+</system-err></testcase><testcase name="Post add mentor schedule availability with valid json"><failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;500&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;500&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;500&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)&#13;
+MusicLab.StepDefinitions.Schedule.PostMentorScheduleStepDef.shouldReturnStatusCodeCreated(PostMentorScheduleStepDef.java:58)&#13;
+✽.Should return status code 201 Created(classpath:features/Cucumber/Schedule/PostAddMentorsSchedulesAvailability.feature:6)&#13;
+</system-err></testcase><testcase name="Post add mentor schedule availability with valid json no authorization"><failure message="1 expectation failed.&#10;JSON path message doesn't match.&#10;Expected: message: missing or malformed jwt&#10;  Actual: missing or malformed jwt&#10;" type="java.lang.AssertionError">1 expectation failed.
+JSON path message doesn't match.
+Expected: message: missing or malformed jwt
+  Actual: missing or malformed jwt
+</failure><system-err>1 expectation failed.
+JSON path message doesn't match.
+Expected: message: missing or malformed jwt
+  Actual: missing or malformed jwt
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)&#13;
+io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)&#13;
+MusicLab.StepDefinitions.Schedule.PostAddMentorScheduleAvailabilityStepdef.responseBodyShouldContainMessageSuccess(PostAddMentorScheduleAvailabilityStepdef.java:36)&#13;
+✽.Response body should contain "message: missing or malformed jwt"(classpath:features/Cucumber/Schedule/PostAddMentorsSchedulesAvailability.feature:15)&#13;
+</system-err></testcase><testcase name="Post add mentor schedule availability with empty json"/><testcase name="Post add mentor schedule with invalid json"/></testsuite>
