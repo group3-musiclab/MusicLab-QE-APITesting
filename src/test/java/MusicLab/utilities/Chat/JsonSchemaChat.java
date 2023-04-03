@@ -10,4 +10,6 @@ public class JsonSchemaChat extends Base {
     public static final String JS_FIVE_HUNDRED_CHAT = JSON_SCHEMA_CHAT + "CreateMessageLongFiveHunParameterJsonSchema.json";
     public static final String JS_ONE_PAR_CHAT = JSON_SCHEMA_CHAT + "CreateMessageOneParameterJsonSchema.json";
     public static final String JS_VALID_PAR_CHAT = JSON_SCHEMA_CHAT + "CreateMessageValidJsonSchema.json";
+    public static final String JS_BLANK_PAR_CHAT = JSON_SCHEMA_CHAT + "CreateMessageBlankParameterJsonSchema.json";
+    public static final String JS_WITHOUT_REQBODY_CHAT = JSON_SCHEMA_CHAT + "CreateMessageWithoutReqBodyJsonSchema.json";
 }

@@ -2,19 +2,11 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "mentor_id": {
-      "type": "string"
-    },
-    "student_id": {
-      "type": "integer"
-    },
-    "chat": {
+    "message": {
       "type": "string"
     }
   },
   "required": [
-    "mentor_id",
-    "student_id",
-    "chat"
+    "message"
   ]
 }

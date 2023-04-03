@@ -2,19 +2,23 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "class_id": {
-      "type": "integer"
+    "data": {
+      "type": "object",
+      "properties": {
+        "payment_url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "payment_url"
+      ]
     },
-    "schedule_id": {
-      "type": "integer"
-    },
-    "start_date": {
+    "message": {
       "type": "string"
     }
   },
   "required": [
-    "class_id",
-    "schedule_id",
-    "start_date"
+    "data",
+    "message"
   ]
 }

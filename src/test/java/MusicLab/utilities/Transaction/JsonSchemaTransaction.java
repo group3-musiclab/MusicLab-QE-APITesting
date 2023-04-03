@@ -10,6 +10,9 @@ public class JsonSchemaTransaction extends Base {
     public static final String JS_INVALID_SCHEDULE_TRANSACTION = JSON_SCHEMA_TRANSACTION + "CreateTransactionInvalidScheduleJsonSchema.json";
     public static final String JS_ONE_PAR_TRANSACTION = JSON_SCHEMA_TRANSACTION + "CreateTransactionOneParameterJsonSchema.json";
     public static final String JS_VALID_PAR_TRANSACTION = JSON_SCHEMA_TRANSACTION + "CreateTransactionValidJsonSchema.json";
+    public static final String JS_BLANK_PAR_TRANSACTION = JSON_SCHEMA_TRANSACTION + "CreateTransactionBlankParameterJsonSchema.json";
+    public static final String JS_WITHOUT_REQBODY_TRANSACTION = JSON_SCHEMA_TRANSACTION + "CreateTransactionWithoutReqBodyJsonSchema.json";
+
 
 
 
