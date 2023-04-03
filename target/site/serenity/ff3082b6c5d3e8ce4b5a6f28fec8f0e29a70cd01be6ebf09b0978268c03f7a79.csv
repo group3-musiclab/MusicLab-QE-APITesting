@@ -1,6 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Music Lab API Automation Testing","Delete schedule with invalid id","FAILURE","2023-04-03T14:44:24.259+07:00[Asia/Bangkok]","0.0","3.1"
-"Music Lab API Automation Testing","Delete schedule with empty id","FAILURE","2023-04-03T14:44:27.384+07:00[Asia/Bangkok]","0.0","0.62"
-"Music Lab API Automation Testing","Delete schedule valid id no authorization","FAILURE","2023-04-03T14:44:28.028+07:00[Asia/Bangkok]","0.0","1.17"
-"Music Lab API Automation Testing","Get mentor schedule with invalid id","FAILURE","2023-04-03T14:44:31.509+07:00[Asia/Bangkok]","0.0","1.08"
-"Music Lab API Automation Testing","Post add mentor schedule availability with valid json no authorization","FAILURE","2023-04-03T14:44:35.636+07:00[Asia/Bangkok]","0.0","0.47"
