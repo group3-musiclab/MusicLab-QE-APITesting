@@ -15,7 +15,7 @@ public class PostCreateReviewinMentorWithInvalidStepdefs {
 
     @Given("Post create Review with invalid JSON")
     public void postCreateReviewWithInvalidJSON() {
-        File jsonReq = new File(ReqBodyReview.REQ_BODY + "PostCreateReviewinMentorWithInvalid.json");
+        File jsonReq = new File(ReqBodyReview.REQ_BODY + "PostCreateReviewinMentorWithInvalid.json.json");
         ReviewAPI.setPostCreateReviewInMentorWithInvalid(jsonReq) ;
     }
 

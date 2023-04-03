@@ -22,7 +22,7 @@ public class PostCreateReviewInMentorValidDataStepdefs {
 
     @Given("Post create Review with valid JSON")
     public void postCreateReviewWithValidJSON() {
-        File jsonReq = new File(ReqBodyReview.REQ_BODY + "PostCreateReviewinMentorValidData.json");
+        File jsonReq = new File(ReqBodyReview.REQ_BODY + "PostCreateReviewinMentorValidData.json.json");
         ReviewAPI.setPostCreateReviewInMentorValidData(jsonReq) ;
     }
 
@@ -38,7 +38,7 @@ public class PostCreateReviewInMentorValidDataStepdefs {
 
     @And("Validate post create Review json schema")
     public void validatePostCreateReviewJsonSchema() {
-        File jsonSchema = new File(JsonSchemaReview.SCHEMA +"PostCreateReviewinMentorValidData.json");
+        File jsonSchema = new File(JsonSchemaReview.SCHEMA +"PostCreateReviewinMentorValidData.json.json");
         SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(jsonSchema));
     }
 }
