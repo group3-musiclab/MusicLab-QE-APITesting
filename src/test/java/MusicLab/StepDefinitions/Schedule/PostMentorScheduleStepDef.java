@@ -67,7 +67,7 @@ public class PostMentorScheduleStepDef {
 
     @And("Validate json schema for post add mentor schedule with valid json")
     public void validateJsonSchemaForPostAddMentorScheduleWithValidJson() {
-        File jsonSchema = new File(JsonSchemaSchedule.SCHEMA+"PostAddMentorScheduleValidJsonJsonSchema.json");
+        File jsonSchema = new File(JsonSchemaSchedule.SCHEMA+"DeleteScheduleValidIdJsonSchema.json");
         SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(jsonSchema));
     }
 

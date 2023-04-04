@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"MusicLab API Automation Testing Capstone Project","Post to make a class with invalid parameters of json file","SUCCESS","2023-04-04T09:48:34.139+07:00[Asia/Bangkok]","0.0","0.34"
+"MusicLab API Automation Testing Capstone Project","Post to make a class with null parameter","SUCCESS","2023-04-04T09:48:34.493+07:00[Asia/Bangkok]","0.0","0.54"
+"MusicLab API Automation Testing Capstone Project","Get all class by ID Mentor invalid","SUCCESS","2023-04-04T09:48:35.077+07:00[Asia/Bangkok]","0.0","0.34"
+"MusicLab API Automation Testing Capstone Project","Put or edit student profile with invalid parameters","SUCCESS","2023-04-04T09:49:15.043+07:00[Asia/Bangkok]","0.0","0.34"
+"MusicLab API Automation Testing Capstone Project","Put or edit a class null parameter","SUCCESS","2023-04-04T09:49:15.387+07:00[Asia/Bangkok]","0.0","0.34"
+"MusicLab API Automation Testing Capstone Project","Put or edit student password with invalid parameters","SUCCESS","2023-04-04T09:49:17.925+07:00[Asia/Bangkok]","0.0","0.34"
+"MusicLab API Automation Testing Capstone Project","Put or edit student password null parameter","SUCCESS","2023-04-04T09:49:18.272+07:00[Asia/Bangkok]","0.0","0.34"

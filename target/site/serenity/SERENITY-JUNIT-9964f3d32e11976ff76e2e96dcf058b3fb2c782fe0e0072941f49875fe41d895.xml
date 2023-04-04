@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Delete genre" skipped="0" tests="3" time="1.59" timestamp="2023-04-04 09:48:38"><testcase name="Delete valid parameter genre"/><testcase name="Delete invalid parameter genre"/><testcase name="Delete blank parameter genre"/></testsuite>

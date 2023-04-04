@@ -46,7 +46,7 @@ public class classAPI extends Base {
       SerenityRest.given().headers("Authorization","Bearer "+BEARER_TOKENM)
               .pathParam(API_Responses.MENTOR_ID,id)
               .pathParam("id",id)
-            .pathParam("mentor_id",mentor_id);
+              .pathParam("mentor_id",mentor_id);
     }
     @Step("Get all class by invalid id mentor")
     public void getAllClassByInvalidIDMentor(String mentor_id, int id){

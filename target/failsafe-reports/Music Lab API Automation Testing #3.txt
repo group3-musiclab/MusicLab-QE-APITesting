@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: Music Lab API Automation Testing #3
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 1.401 s <<< FAILURE! - in Music Lab API Automation Testing #3
+Music Lab API Automation Testing #3.Post add mentor schedule with invalid json  Time elapsed: 0.498 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <500>.
+
+
+Music Lab API Automation Testing #3.Post add mentor schedule with empty json  Time elapsed: 0.018 s  <<< ERROR!
+java.lang.RuntimeException: Some exception during recording fields
+Caused by: java.io.FileNotFoundException: D:\Alterra\Automation\API\MusicLab-QE-APITesting\src\test\resources\features\JSON\ReqBody\Schedule\PostAddMentorScheduleWithEmptyJsonJsonReqBody.json (The system cannot find the file specified)
+

@@ -1,8 +1,6 @@
 package MusicLab.StepDefinitions.Review;
 
 import MusicLab.API.Review.ReviewAPI;
-import MusicLab.utilities.Instrument.JsonSchemaInstrument;
-import MusicLab.utilities.Mentor.ReqBodyMentor;
 import MusicLab.utilities.Review.JsonSchemaReview;
 import MusicLab.utilities.Review.ReqBodyReview;
 import io.cucumber.java.en.And;
@@ -29,11 +27,6 @@ public class PostCreateReviewInMentorValidDataStepdefs {
     @When("Send post create Review")
     public void sendPostCreateReview() { SerenityRest.when().post(
             ReviewAPI.POST_CREATE_REVIEW_IN_MENTOR_VALID_DATA );
-    }
-
-    @Then("Status code should be {int} Create")
-    public void statusCodeShouldBeCreate(int create) {
-        SerenityRest.then().statusCode(create);
     }
 
     @And("Validate post create Review json schema")

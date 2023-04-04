@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Get Chat Message","Get chat contents with valid path","SUCCESS","2023-04-04T09:48:26.326+07:00[Asia/Bangkok]","0.0","0.49"
+"Get Inbox List","Get all list chat with valid path","SUCCESS","2023-04-04T09:48:27.202+07:00[Asia/Bangkok]","0.0","0.53"
+"Post Create Message","Create message with valid parameter on json request body","SUCCESS","2023-04-04T09:48:28.094+07:00[Asia/Bangkok]","0.0","0.88"

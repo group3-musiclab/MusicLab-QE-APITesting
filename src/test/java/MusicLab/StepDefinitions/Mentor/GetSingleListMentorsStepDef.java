@@ -41,7 +41,7 @@ public class GetSingleListMentorsStepDef {
         SerenityRest.when().get(MentorsAPI.GET_SINGLE_MENTORS_PROFILE);
     }
 
-    @When("Send request get single mentors with valid id")
+    @When("Send request to get single mentors with valid id")
     public void sendRequestGetSingleListMentorsWithValidId() {
         SerenityRest.when().get(MentorsAPI.GET_SINGLE_MENTORS_PROFILE_BY_ID);
     }

@@ -28,10 +28,7 @@ public class ClassStepdef {
     public void sendRequestPostMakeAClass() {
         SerenityRest.when().post(classAPI.POST_A_CLASS);
     }
-    @Then("Status code should be {int} OK")
-    public void statusCodeShouldBeOK(int OK) {
-        SerenityRest.then().statusCode(OK);
-    }
+
     @And("Validate valid post class response body")
     public void validateValidPostClassResponseBody() {
         File json = new File(JSON_SCHEMA_USER + "Class/PostMakeAClass.json");
@@ -43,10 +40,6 @@ public class ClassStepdef {
     public void createAClassWithInvalidJson() {
         File jsonReq = new File(JSON_REQ_BODY_USER+"Class/PostMakeClassInvalid.json");
         classAPI.postMakeClassInvalid(jsonReq);
-    }
-    @Then("Status code should be {int} Bad Request")
-    public void statusCodeShouldBeBadRequest(int BadRequest) {
-        SerenityRest.then().statusCode(BadRequest);
     }
 
     @And("Validate invalid post class response body")
@@ -68,11 +61,7 @@ public class ClassStepdef {
     }
     @When("Send request get list all class")
     public void sendRequestGetListAllClass() {
-        SerenityRest.when().get(classAPI.GET_ALL_CLASS_BY_ID_MENTOR);
-    }
-    @Then("Status code should be {int} Not Found")
-    public void statusCodeShouldBeNotFound(int NotFound) {
-        SerenityRest.then().statusCode(NotFound);
+        SerenityRest.when().get(MusicLab.API.Class.classAPI.GET_ALL_CLASS_BY_ID_MENTOR);
     }
 
     //get list id invalid

@@ -1,0 +1,2 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Post Create Transaction","Create transaction with valid parameter on json request body","SUCCESS","2023-04-04T09:49:20.563+07:00[Asia/Bangkok]","0.0","1.78"

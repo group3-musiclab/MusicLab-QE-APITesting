@@ -1,0 +1,54 @@
+-------------------------------------------------------------------------------
+Test set: Music Lab API Automation Testing #1
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 2.606 s <<< FAILURE! - in Music Lab API Automation Testing #1
+Music Lab API Automation Testing #1.Delete schedule with valid id #1  Time elapsed: 0.429 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+
+Music Lab API Automation Testing #1.Delete schedule with valid id #2  Time elapsed: 0.426 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+
+Music Lab API Automation Testing #1.Delete schedule with invalid id #1  Time elapsed: 0.359 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: message: id param must number
+  Actual: id param must number
+
+
+Music Lab API Automation Testing #1.Delete schedule with invalid id #2  Time elapsed: 0.34 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: message: id param must number
+  Actual: id param must number
+
+
+Music Lab API Automation Testing #1.Delete schedule with empty id  Time elapsed: 0.345 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+
+Music Lab API Automation Testing #1.Delete schedule valid id no authorization #1  Time elapsed: 0.349 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: message: missing or malformed jwt
+  Actual: missing or malformed jwt
+
+
+Music Lab API Automation Testing #1.Delete schedule valid id no authorization #2  Time elapsed: 0.344 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: message: missing or malformed jwt
+  Actual: missing or malformed jwt
+
+

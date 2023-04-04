@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Register mentor","Register mentor valid json","SUCCESS","2023-04-04T09:48:19.796+07:00[Asia/Bangkok]","0.0","1.88"
+"Register mentor","Register mentor with existing json","FAILURE","2023-04-04T09:48:21.69+07:00[Asia/Bangkok]","0.0","0.51"
+"Register mentor","Register mentor with invalid json","SUCCESS","2023-04-04T09:48:22.206+07:00[Asia/Bangkok]","0.0","0.57"
+"Register mentor","Register mentor with blank json","SUCCESS","2023-04-04T09:48:22.787+07:00[Asia/Bangkok]","0.0","0.37"

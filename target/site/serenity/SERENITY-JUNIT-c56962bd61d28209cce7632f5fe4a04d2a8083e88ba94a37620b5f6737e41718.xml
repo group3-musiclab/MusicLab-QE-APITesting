@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="3" name="MusicLab API Automation Testing Capstone Project" skipped="0" tests="18" time="10.75" timestamp="2023-04-04 09:48:32"><testcase name="Post to make a class with valid parameters of json file"/><testcase name="Post to make a class with invalid parameters of json file"/><testcase name="Post to make a class with null parameter"/><testcase name="Get all class by ID Mentor valid"><error message="Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: mentor_id, id." type="java.lang.IllegalArgumentException">Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: mentor_id, id.</error><system-err>Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: mentor_id, id.&#13;
+io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1248)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:818)&#13;
+groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)&#13;
+io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1135)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:818)&#13;
+groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)&#13;
+io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:818)&#13;
+groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)&#13;
+io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:818)&#13;
+groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)&#13;
+io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)&#13;
+net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.executeCall(RequestSpecificationDecorated.java:311)&#13;
+net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.execute(RequestSpecificationDecorated.java:268)&#13;
+net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.get(RequestSpecificationDecorated.java:67)&#13;
+net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.get(RequestSpecificationDecorated.java:38)&#13;
+MusicLab.StepDefinitions.Class.ClassStepdef.sendRequestGetListAllClass(ClassStepdef.java:64)&#13;
+✽.Send request get list all class(classpath:features/Cucumber/Class/ClassFeature.feature:26)&#13;
+</system-err></testcase><testcase name="Get all class by ID Mentor invalid"/><testcase name="Get mentor class detail"/><testcase name="Put or edit a class valid json all parameters"/><testcase name="Put or edit a class one parameter"/><testcase name="Put or edit a class null parameter"/><testcase name="Delete a class"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)&#13;
+MusicLab.StepDefinitions.Instrument.GetIntrumentStepDef.statusCodeShouldBeOK(GetIntrumentStepDef.java:52)&#13;
+✽.Status code should be 200 OK(classpath:features/Cucumber/Class/ClassFeature.feature:69)&#13;
+</system-err></testcase><testcase name="Get student data"/><testcase name="Put or edit student profile with valid parameters"/><testcase name="Put or edit student profile with invalid parameters"/><testcase name="Put or edit a class null parameter"/><testcase name="Deactive student"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;500&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)&#13;
+MusicLab.StepDefinitions.Instrument.GetIntrumentStepDef.statusCodeShouldBeOK(GetIntrumentStepDef.java:52)&#13;
+✽.Status code should be 200 OK(classpath:features/Cucumber/Student/StudentFeature.feature:34)&#13;
+</system-err></testcase><testcase name="Put or edit student password with valid parameters"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;400&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;400&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;400&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)&#13;
+MusicLab.StepDefinitions.Instrument.GetIntrumentStepDef.statusCodeShouldBeOK(GetIntrumentStepDef.java:52)&#13;
+✽.Status code should be 200 OK(classpath:features/Cucumber/Student/StudentFeature.feature:40)&#13;
+</system-err></testcase><testcase name="Put or edit student password with invalid parameters"/><testcase name="Put or edit student password null parameter"/></testsuite>

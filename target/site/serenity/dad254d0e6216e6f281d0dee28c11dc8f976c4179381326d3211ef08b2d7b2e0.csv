@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Get Inbox List","Get all list chat with valid path","SUCCESS","2023-04-04T09:48:27.202+07:00[Asia/Bangkok]","0.0","0.53"
+"Get Inbox List","Get all list chat with invalid path","SUCCESS","2023-04-04T09:48:27.736+07:00[Asia/Bangkok]","0.0","0.34"

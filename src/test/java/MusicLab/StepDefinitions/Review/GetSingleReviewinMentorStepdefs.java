@@ -28,13 +28,9 @@ public class GetSingleReviewinMentorStepdefs {
         SerenityRest.when().get(ReviewAPI.GET_SINGLE_REVIEW_IN_MENTOR_CASE);
     }
 
-    @Then("Status code should be {int} OK")
-    public void statusCodeShouldBeOK(int ok) {SerenityRest.then().statusCode(ok);
-    }
-
     @And("Validate single review json schema")
     public void validateSingleReviewJsonSchema() {
-        File jsonSchema = new File(JsonSchemaReview .SCHEMA+"GetSingleReviewinMentor.json");
+        File jsonSchema = new File(JsonSchemaReview.SCHEMA+"GetSingleReviewinMentor.json");
         SerenityRest.then().assertThat()
                 .body(JsonSchemaValidator.matchesJsonSchema(jsonSchema));
     }

@@ -1,8 +1,6 @@
 package MusicLab.StepDefinitions.Mentor;
 
 import MusicLab.API.Mentor.MentorsAPI;
-import MusicLab.utilities.Mentor.JsonSchemaMentor;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.restassured.module.jsv.JsonSchemaValidator;

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: [MusicLab-API] Get Feature Mentors #1
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2.504 s <<< FAILURE! - in [MusicLab-API] Get Feature Mentors #1
+[MusicLab-API] Get Feature Mentors #1.[Negative Case] Get All List Mentors With Invalid Parameters #1  Time elapsed: 0.399 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <200>.
+
+
+[MusicLab-API] Get Feature Mentors #1.[Negative Case] Get All List Mentors With Invalid Parameters #6  Time elapsed: 0.384 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <200>.
+
+

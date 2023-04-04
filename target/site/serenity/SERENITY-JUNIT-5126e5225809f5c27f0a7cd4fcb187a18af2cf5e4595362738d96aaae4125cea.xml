@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Post Create Message" skipped="0" tests="9" time="4.45" timestamp="2023-04-04 09:48:28"><testcase name="Create message with valid parameter on json request body"/><testcase name="Create message with invalid parameter mentor_id on json request body"/><testcase name="Create message with invalid parameter student_id on json request body"/><testcase name="Create message with blank or empty parameter on json request body"/><testcase name="Create message with extra parameter on json request body"/><testcase name="Create message with 1 parameter(only chat contents)"><failure message="1 expectation failed.&#10;JSON path message doesn't match.&#10;Expected: validate: Key: 'Core.StudentID' Error:Field validation for 'StudentID' failed on the 'required' tag\nKey: 'Core.MentorID' Error:Field validation for 'MentorID' failed on the 'required' tag&#10;  Actual: validate: Key: 'Core.StudentID' Error:Field validation for 'StudentID' failed on the 'required' tag\nKey: 'Core.MentorID' Error:Field validation for 'MentorID' failed on the 'required' tag&#10;" type="java.lang.AssertionError">1 expectation failed.
+JSON path message doesn't match.
+Expected: validate: Key: 'Core.StudentID' Error:Field validation for 'StudentID' failed on the 'required' tag\nKey: 'Core.MentorID' Error:Field validation for 'MentorID' failed on the 'required' tag
+  Actual: validate: Key: 'Core.StudentID' Error:Field validation for 'StudentID' failed on the 'required' tag\nKey: 'Core.MentorID' Error:Field validation for 'MentorID' failed on the 'required' tag
+</failure><system-err>1 expectation failed.
+JSON path message doesn't match.
+Expected: validate: Key: 'Core.StudentID' Error:Field validation for 'StudentID' failed on the 'required' tag\nKey: 'Core.MentorID' Error:Field validation for 'MentorID' failed on the 'required' tag
+  Actual: validate: Key: 'Core.StudentID' Error:Field validation for 'StudentID' failed on the 'required' tag\nKey: 'Core.MentorID' Error:Field validation for 'MentorID' failed on the 'required' tag
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)&#13;
+io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)&#13;
+MusicLab.StepDefinitions.Chat.CreateMessageStepdef.responBodyMessageShouldBe(CreateMessageStepdef.java:38)&#13;
+✽.Respon body message should be "validate: Key: 'Core.StudentID' Error:Field validation for 'StudentID' failed on the 'required' tag\nKey: 'Core.MentorID' Error:Field validation for 'MentorID' failed on the 'required' tag"(classpath:features/Cucumber/Chat/PostCreateMessage.feature:55)&#13;
+</system-err></testcase><testcase name="Create messages longer than 500 characters"/><testcase name="Create message without any characters or request body"/><testcase name="Create message with invalid path"/></testsuite>

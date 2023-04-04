@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: [MusicLab-API] Post Feature Instrument #2
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.03 s <<< FAILURE! - in [MusicLab-API] Post Feature Instrument #2
+[MusicLab-API] Post Feature Instrument #2.[Positive Case] Post Create Mentors Instruments Valid JSON  Time elapsed: 0.03 s  <<< ERROR!
+java.lang.RuntimeException: Some exception during recording fields
+Caused by: java.io.FileNotFoundException: D:\Alterra\Automation\API\MusicLab-QE-APITesting\src\test\resources\features\JSON\ReqBody\InstrumentValidPostCreateInstrumenJsonReqBody.json (The system cannot find the file specified)
+
