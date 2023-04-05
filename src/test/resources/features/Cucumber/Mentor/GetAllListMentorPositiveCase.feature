@@ -11,7 +11,7 @@ Feature: [MusicLab-API] Get Feature Mentors
   Scenario Outline: [Positive Case] Get All List Mentors With Valid Parameters
     Given Get all list mentors with valid parameters "<param>"
     When Send request get all list mentors with parameters
-    Then Status code should be 200 OK
+    Then Status code should be 200 OK -Mentors_Instruments
     Examples:
       | param                       |
       | page=1                      |
@@ -25,5 +25,5 @@ Feature: [MusicLab-API] Get Feature Mentors
   Scenario: [Positive Case] Get All List Mentors Top Week
     Given Get list mentors top week
     When Send request get all list mentors top week
-    Then Status code should be 200 OK
+    Then Status code should be 200 OK -Mentors_Instruments
     And Validate get all list mentors top week json schema

@@ -49,7 +49,7 @@ public class DeleteInstrumentStepDef {
         SerenityRest.when().delete(InstrumentAPI.DELETE_INSTRUMENT_BLANK_ID);
     }
 
-    @Then("Status code should be {int} Not Found")
+    @Then("Status code should be {int} Not Found -Mentors_Instruments")
     public void statusCodeShouldBeNotFound(int notfound) {
         SerenityRest.then().statusCode(notfound);
     }

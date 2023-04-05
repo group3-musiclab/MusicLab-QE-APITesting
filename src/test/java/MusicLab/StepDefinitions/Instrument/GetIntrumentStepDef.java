@@ -47,12 +47,12 @@ public class GetIntrumentStepDef {
         SerenityRest.when().get(InstrumentAPI.GET_LIST_SINGLE_INSTRUMENT);
     }
 
-    @Then("Status code should be {int} OK")
+    @Then("Status code should be {int} OK -Mentors_Instruments")
     public void statusCodeShouldBeOK(int ok) {
         SerenityRest.then().statusCode(ok);
     }
 
-    @Then("Status code should be {int} Bad Request")
+    @Then("Status code should be {int} Bad Request -Mentors_Instruments")
     public void statusCodeShouldBeBadRequest(int bad) {
         SerenityRest.then().statusCode(bad);
     }

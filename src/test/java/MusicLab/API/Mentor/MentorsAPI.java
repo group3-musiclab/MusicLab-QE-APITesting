@@ -54,7 +54,7 @@ public class MentorsAPI extends Base {
 
     @Step("Get single mentors")
     public void setGetSingleMentorsProfile(){
-        SerenityRest.given();
+        SerenityRest.given().header("Authorization","Bearer "+TOKEN_MENTOR);
     }
 
     @Step("Get single mentor with valid id ")
