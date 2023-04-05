@@ -4,7 +4,7 @@ Feature: [MusicLab-API] Get Feature Mentors
   Scenario: [Positive Case] Get All List Mentors Normal Condition
     Given Get all list mentors
     When Send request get all list mentors
-    Then Status code should be 200 OK
+    Then Status code should be 200 OK -Mentors_Instruments
     And Validate get all list mentors json schema
 
   @GetAllListWithParamPos
