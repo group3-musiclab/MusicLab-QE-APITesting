@@ -41,13 +41,18 @@ public class PostGenreSteps {
     }
 
 //    No auth
-    @When("Send request post genre no auth")
-    public void sendRequestPostGenreNoAuth() {
+    @Given("Mentor post genre with valid json with no auth")
+    public void mentorPostGenreWithValidJsonWithNoAuth() {
         File json = new File(ReqBodyGenre.POST);
-        genre.postGenre(json);
+        genre.postGenreNoAuth(json);
     }
 
-    @Then("Status code should {int} Unauthorized")
+    @When("Send request post genre no auth")
+    public void sendRequestPostGenreNoAuth() {
+        SerenityRest.when().post(Genre.POST);
+    }
+
+    @Then("Status code should {int} Unauthorized auth")
     public void statusCodeShouldUnauthorized(int code) {
         SerenityRest.then().statusCode(code);
     }

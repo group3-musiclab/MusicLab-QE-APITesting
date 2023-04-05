@@ -29,7 +29,7 @@ public class RegisterMentorSteps {
         SerenityRest.when().post(Auth.REGISTER);
     }
 
-    @Then("Status code should {int} Created")
+    @Then("Status code should {int} Created auth")
     public void statusCodeShouldCreated(int code) {
         SerenityRest.then().statusCode(code);
     }
@@ -41,7 +41,7 @@ public class RegisterMentorSteps {
     }
 
 //    Existing regis email
-    @Then("Status code should {int} Internal Server Error")
+    @Then("Status code should {int} Internal Server Error auth")
     public void statusCodeShouldInternalServerError(int code) {
         SerenityRest.then().statusCode(code);
     }

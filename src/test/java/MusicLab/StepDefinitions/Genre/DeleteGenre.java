@@ -40,7 +40,7 @@ public class DeleteGenre {
         SerenityRest.when().delete(Genre.DELETE_GENRE_BLANK);
     }
 
-    @Then("Status code should {int} Method Not Allowed")
+    @Then("Status code should {int} Method Not Allowed auth")
     public void statusCodeShouldMethodNotAllowed(int code) {
         SerenityRest.then().statusCode(code);
     }

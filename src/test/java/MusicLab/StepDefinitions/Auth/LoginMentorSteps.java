@@ -32,7 +32,7 @@ public class LoginMentorSteps {
         SerenityRest.when().post(Auth.LOGIN);
     }
 
-    @Then("Status code should {int} OK")
+    @Then("Status code should {int} OK auth")
     public void statusCodeShouldOK(int code) {
         SerenityRest.then().statusCode(code);
     }
@@ -56,7 +56,7 @@ public class LoginMentorSteps {
         auth.login(json);
     }
 
-    @Then("Status code should {int} Bad Request")
+    @Then("Status code should {int} Bad Request auth")
     public void statusCodeShouldBadRequest(int code) {
         SerenityRest.then().statusCode(code);
     }
