@@ -38,11 +38,6 @@ public class GetMentorScheduleStepDef {
         SerenityRest.when().get(ScheduleAPI.GET_MENTOR_SCHEDULE_VALID_ID);
     }
 
-    @Then("Should return status code {int} OK")
-    public void shouldReturnStatusCodeOK(int OK) {
-        SerenityRest.then().statusCode(OK);
-    }
-
     @And("Validate json schema for get mentor schedule")
     public void validateJsonSchemaForGetMentorSchedule() {
         File jsonSchema = new File(JsonSchemaSchedule.SCHEMA+"GetMentorScheduleJsonSchema.json");
@@ -58,17 +53,17 @@ public class GetMentorScheduleStepDef {
         SerenityRest.when().get(ScheduleAPI.GET_MENTOR_SCHEDULE_INVALID_ID);
     }
 
-    @Then("Should return status code {int} Bad Request")
+    @Then("Should return status code {int} Bad Request schedule")
     public void shouldReturnStatusCodeBadRequest(int bad) {
         SerenityRest.then().statusCode(bad);
     }
 
-    @Then("Should return status code {int} Unauthorized")
+    @Then("Should return status code {int} Unauthorized schedule")
     public void shouldReturnStatusCodeUnauthorized(int unauthorized) {
         SerenityRest.then().statusCode(unauthorized);
     }
 
-    @Then("Should return status code {int} Not Found")
+    @Then("Should return status code {int} Not Found schedule")
     public void shouldReturnStatusCodeNotFound(int not_found) {
         SerenityRest.then().statusCode(not_found);
     }

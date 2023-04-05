@@ -4,6 +4,7 @@ import MusicLab.API.Schedule.ScheduleAPI;
 import MusicLab.utilities.Schedule.JsonSchemaSchedule;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import net.serenitybdd.rest.SerenityRest;
@@ -60,4 +61,8 @@ public class DeleteMentorScheduleStepdef {
         SerenityRest.when().delete(ScheduleAPI.DELETE_SCHEDULE_EMPTY_ID);
     }
 
+    @Then("Should return status code {int} OK schedule")
+    public void shouldReturnStatusCodeOK(int code) {
+        SerenityRest.then().statusCode(code);
+    }
 }

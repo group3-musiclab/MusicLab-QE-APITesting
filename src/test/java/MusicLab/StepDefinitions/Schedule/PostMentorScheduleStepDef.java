@@ -53,7 +53,7 @@ public class PostMentorScheduleStepDef {
         SerenityRest.when().post(ScheduleAPI.POST_ADD_MENTOR_SCHEDULE_VALID_JSON);
     }
 
-    @Then("Should return status code {int} Created")
+    @Then("Should return status code {int} Created schedule")
     public void shouldReturnStatusCodeCreated(int created) {
         SerenityRest.then().statusCode(created);
 
@@ -100,8 +100,12 @@ public class PostMentorScheduleStepDef {
 
     @When("Send request post add mentor schedule empty json")
     public void sendRequestPostAddMentorScheduleEmptyJson() {
-        SerenityRest.when().post(ScheduleAPI.POST_ADD_MENTOR_SCHEDULE_EMPTY_JSON);
+        SerenityRest.when().post(ScheduleAPI.POST_ADD_MENTOR_SCHEDULE_INVALID_JSON);
     }
 
 
+    @Then("Should return status code {int} Internal Server")
+    public void shouldReturnStatusCodeInternalServer(int code) {
+        SerenityRest.then().statusCode(code);
+    }
 }
