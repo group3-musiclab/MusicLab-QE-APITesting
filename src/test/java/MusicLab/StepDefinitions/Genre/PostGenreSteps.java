@@ -52,7 +52,7 @@ public class PostGenreSteps {
         SerenityRest.when().post(Genre.POST);
     }
 
-    @Then("Status code should {int} Unauthorized")
+    @Then("Status code should {int} Unauthorized auth")
     public void statusCodeShouldUnauthorized(int code) {
         SerenityRest.then().statusCode(code);
     }
