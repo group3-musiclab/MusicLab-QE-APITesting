@@ -24,7 +24,7 @@
     And Validate message genre schema
 
   Scenario: mentor post genre with no authorization
-    Given Mentor post genre with valid json
+    Given Mentor post genre with valid json with no auth
     When Send request post genre no auth
     Then Status code should 401 Unauthorized
     And Response body should be "missing or malformed jwt" as message

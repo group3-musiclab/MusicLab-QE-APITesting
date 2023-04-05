@@ -29,7 +29,7 @@ public class RegisterMentorSteps {
         SerenityRest.when().post(Auth.REGISTER);
     }
 
-    @Then("Status code should {int} Created")
+    @Then("Status code should {int} Created auth")
     public void statusCodeShouldCreated(int code) {
         SerenityRest.then().statusCode(code);
     }
