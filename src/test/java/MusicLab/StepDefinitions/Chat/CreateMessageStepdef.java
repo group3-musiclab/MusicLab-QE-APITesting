@@ -32,7 +32,7 @@ public class CreateMessageStepdef {
         SerenityRest.when().post(ChatAPIAutomation.POST_CREATE_MESSAGE);
     }
 
-    @Then("Status code should be {int} Created")
+    @Then("Status code rizki should be {int} Created")
     public void statusCodeShouldBeCreated(int created) {
         SerenityRest.then().statusCode(created);
     }
@@ -57,7 +57,7 @@ public class CreateMessageStepdef {
         chatAPIAutomation.setPostCreateMessage(reqBody);
     }
 
-    @Then("Status code should be {int} Bad Request")
+    @Then("Status code rizki should be {int} Bad Request")
     public void statusCodeShouldBeBadRequest(int badRequest) {
         SerenityRest.then().statusCode(badRequest);
     }
@@ -153,7 +153,7 @@ public class CreateMessageStepdef {
     public void sendRequestPostCreateMessageInvalidPath() {
         SerenityRest.when().post(ChatAPIAutomation.POST_CREATE_MESSAGE_INVALID_PATH);
     }
-    @Then("Status code should be {int} Not Found")
+    @Then("Status code rizki should be {int} Not Found")
     public void statusCodeShouldBeNotFound(int notFound) {
         SerenityRest.then().statusCode(notFound);
     }

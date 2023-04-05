@@ -5,7 +5,7 @@ Feature: Get Mentor Transaction
   Scenario Outline: Get mentor transaction with valid path
     Given Get mentor transaction with page <page> and limit <limit>
     When Send request get mentor transaction
-    Then Status code should be 200 OK
+    Then Status code rizki should be 200 OK
     And Respon body message should be "success show mentor transaction history"
     Examples:
       | page | limit |
@@ -16,7 +16,7 @@ Feature: Get Mentor Transaction
   Scenario Outline: Get mentor transaction with invalid path
     Given Get mentor transaction with page <page> and limit <limit>
     When Send request get mentor transaction invalid path
-    Then Status code should be 404 Not Found
+    Then Status code rizki should be 404 Not Found
     And Respon body message should be "Not Found"
     Examples:
       | page | limit |

@@ -20,7 +20,7 @@ public class GetChatMessageStepDef {
         SerenityRest.when().get(ChatAPIAutomation.GET_CHAT_MESSAGE);
     }
 
-    @Then("Status code should be {int} OK")
+    @Then("Status code rizki should be {int} OK")
     public void statusCodeShouldBeOK(int ok) {
         SerenityRest.then().statusCode(ok);
     }
