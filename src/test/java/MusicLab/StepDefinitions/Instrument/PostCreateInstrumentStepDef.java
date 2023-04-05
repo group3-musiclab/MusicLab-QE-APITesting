@@ -44,17 +44,17 @@ public class PostCreateInstrumentStepDef {
         SerenityRest.when().post(InstrumentAPI.POST_MENTORS_INSTRUMENT);
     }
 
-    @Then("Status code should be {int} Create")
+    @Then("Status code should be {int} Create -Mentors_Instruments")
     public void statusCodeShouldBeCreate(int create) {
         SerenityRest.then().statusCode(create);
     }
 
-    @Then("Status code should be {int} Unauthorized")
+    @Then("Status code should be {int} Unauthorized -Mentors_Instruments")
     public void statusCodeShouldBeUnauthorized(int auth) {
         SerenityRest.then().statusCode(auth);
     }
 
-    @And("Response should be {string}")
+    @And("Response should be {string} -Mentors_Instruments")
     public void responsBodyShouldBeBody(String body) {
         SerenityRest.then()
                 .body(API_Responses.BODY_MESSAGE,equalTo(body));

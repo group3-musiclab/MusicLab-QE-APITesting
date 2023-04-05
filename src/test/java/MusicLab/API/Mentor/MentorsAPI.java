@@ -13,8 +13,8 @@ import io.restassured.http.ContentType;
 public class MentorsAPI extends Base {
 
     public static File imageFile = new File("image.jpg");
-    public static  String TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2ODEyNzk3NTgsInJvbGUiOiJNZW50b3IiLCJ1c2VySWQiOjE5fQ.DMXgj-ACiPMZqmbDeGeNTJOUz5O9-rxdftSqnWxCRJA";
-    public static  String CERTIFICATE_FILE = JSON_REQ_BODY_USER+"Mentor/NormalCertificate.jpg";
+    public static  String TOKEN_MENTOR = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2ODE5MTU3NzMsInJvbGUiOiJNZW50b3IiLCJ1c2VySWQiOjQ5fQ.uhCirlYsHVLJ6Rr50w0MAkDlsav_qLOPRyc_EYIJJgU";
+    public static  String CERTIFICATE_FILE = JSON_REQ_BODY_USER+"Mentor/download.jpg";
     public static  String AVATAR_FILE = JSON_REQ_BODY_USER+"Mentor/NormalAvatar.jpg";
     public static  String OVERSIZE_FILE = JSON_REQ_BODY_USER+"Mentor/OverSizeImage.jpg";
     public static String GET_ALL_LIST_MENTORS = BASE_URL + "mentors";
@@ -54,7 +54,7 @@ public class MentorsAPI extends Base {
 
     @Step("Get single mentors")
     public void setGetSingleMentorsProfile(){
-        SerenityRest.given();
+        SerenityRest.given().header("Authorization","Bearer "+TOKEN_MENTOR);
     }
 
     @Step("Get single mentor with valid id ")
@@ -76,7 +76,7 @@ public class MentorsAPI extends Base {
 
     @Step("Post Create Mentors Credential with valid JSON")
     public void setPostCreateMentorsCredentialValidJSON() {
-        SerenityRest.given().header("Authorization","Bearer "+TOKEN)
+        SerenityRest.given().header("Authorization","Bearer "+TOKEN_MENTOR)
                 .contentType("multipart/form-data")
                 .multiPart("type", "International")
                 .multiPart("name", "Guitar Master")
@@ -85,7 +85,7 @@ public class MentorsAPI extends Base {
 
     @Step("Post Create Mentors Credential with over-size image/jpg")
     public void setPostCreateMentorsCredentialWithOverSizeImage() {
-        SerenityRest.given().header("Authorization","Bearer "+TOKEN)
+        SerenityRest.given().header("Authorization","Bearer "+TOKEN_MENTOR)
                 .contentType("multipart/form-data")
                 .multiPart("type", "International")
                 .multiPart("name", "Guitar Master")
@@ -94,7 +94,7 @@ public class MentorsAPI extends Base {
 
     @Step("Post Create Mentors Credential with invalid JSON")
     public void setPostCreateMentorsCredentialInvalidJSON(File json) {
-        SerenityRest.given().header("Authorization","Bearer "+TOKEN)
+        SerenityRest.given().header("Authorization","Bearer "+TOKEN_MENTOR)
                 .contentType(ContentType.JSON)
                 .body(json);
     }
@@ -109,7 +109,7 @@ public class MentorsAPI extends Base {
     @Step("Put Update Mentors Profile with Valid JSON")
     public void setPutUpdateMentorsProfileWithValidJson(String mentors) {
         SerenityRest.given()
-                .header("Authorization","Bearer "+TOKEN)
+                .header("Authorization","Bearer "+TOKEN_MENTOR)
                 .pathParam("mentors", mentors)
                 .contentType("multipart/form-data")
                 .multiPart("name", "Aldan Maulana Fajri")
@@ -125,7 +125,7 @@ public class MentorsAPI extends Base {
     @Step("Put Update Mentors Profile with over-size image/jpg")
     public void setPutUpdateMentorsProfileWithOverSizeImage(String mentors) {
         SerenityRest.given()
-                .header("Authorization","Bearer "+TOKEN)
+                .header("Authorization","Bearer "+TOKEN_MENTOR)
                 .pathParam("mentors", mentors)
                 .contentType("multipart/form-data")
                 .multiPart("name", "Aldan Maulana Fajri")
@@ -140,7 +140,7 @@ public class MentorsAPI extends Base {
 
     @Step("Put Update Mentors Profile with Invalid JSON")
     public void setPutUpdateMentorsProfileWithInvalidJson(File json) {
-        SerenityRest.given().header("Authorization","Bearer "+TOKEN)
+        SerenityRest.given().header("Authorization","Bearer "+TOKEN_MENTOR)
                 .contentType(ContentType.JSON)
                 .body(json);
     }
@@ -155,7 +155,7 @@ public class MentorsAPI extends Base {
     @Step("Put Update Mentors Password with Valid JSON")
     public void setPutUpdateMentorsPasswordWithValidJson(File json) {
         SerenityRest.given()
-                .header("Authorization","Bearer "+TOKEN)
+                .header("Authorization","Bearer "+TOKEN_MENTOR)
                 .contentType(ContentType.JSON)
                 .body(json);
     }
@@ -163,7 +163,7 @@ public class MentorsAPI extends Base {
     @Step("Put Update Mentors Password with Invalid JSON")
     public void setPutUpdateMentorsPasswordWithInvalidJson(File json) {
         SerenityRest.given()
-                .header("Authorization","Bearer "+TOKEN)
+                .header("Authorization","Bearer "+TOKEN_MENTOR)
                 .contentType(ContentType.JSON)
                 .body(json);
     }
@@ -177,7 +177,7 @@ public class MentorsAPI extends Base {
 
     @Step("Delete mentors with auth")
     public void setDeleteMentorsWithAuth(){
-        SerenityRest.given().header("Authorization","Bearer "+TOKEN);
+        SerenityRest.given().header("Authorization","Bearer "+TOKEN_MENTOR);
     }
 
     @Step("Delete mentors with no auth")

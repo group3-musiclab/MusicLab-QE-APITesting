@@ -54,12 +54,12 @@ public class PostCreateMentorsCredentialStepDef {
         SerenityRest.when().post(MentorsAPI.POST_CREATED_MENTORS_CREDENTIAL);
     }
 
-    @Then("Status code should be {int} Internal server error")
+    @Then("Status code should be {int} Internal server error -Mentors_Instruments")
     public void statusCodeShouldBeServerError(int error) {
         SerenityRest.then().statusCode(error);
     }
 
-    @And("Response should be message {string}")
+    @And("Response should be message {string} -Mentors_Instruments")
     public void responseBodyShouldBeMessage(String body) {
         SerenityRest.then()
                 .body(API_Responses.BODY_MESSAGE,equalTo(body));
