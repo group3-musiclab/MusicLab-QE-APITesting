@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: Mentor post genre
--------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.537 s <<< FAILURE! - in Mentor post genre
-Mentor post genre.mentor post genre with no authorization  Time elapsed: 0.026 s  <<< ERROR!
-java.lang.NullPointerException
-

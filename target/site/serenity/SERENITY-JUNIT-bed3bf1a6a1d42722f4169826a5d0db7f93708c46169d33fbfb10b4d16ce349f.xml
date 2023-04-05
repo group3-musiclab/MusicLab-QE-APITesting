@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Mentor post genre" skipped="0" tests="4" time="1.51" timestamp="2023-04-04 09:48:42"><testcase name="Mentor post genre with valid json"/><testcase name="Mentor post genre invalid json"/><testcase name="Mentor post genre blank json"/><testcase name="mentor post genre with no authorization"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-net.serenitybdd.rest.SerenityRest.then(SerenityRest.java:62)&#13;
-MusicLab.StepDefinitions.Genre.PostGenreSteps.statusCodeShouldUnauthorized(PostGenreSteps.java:52)&#13;
-✽.Status code should 401 Unauthorized(classpath:features/Cucumber/Genre/PostMentorGenre.feature:29)&#13;
-</system-err></testcase></testsuite>

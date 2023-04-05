@@ -1,6 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Get all data about genre mentor","Get mentor genre valid parameter","SUCCESS","2023-04-04T09:48:40.898+07:00[Asia/Bangkok]","0.0","0.42"
-"Get all data about genre mentor","Get mentor genre invalid parameter","SUCCESS","2023-04-04T09:48:41.329+07:00[Asia/Bangkok]","0.0","0.35"
-"Get all data about genre mentor","Get mentor genre blank parameter","SUCCESS","2023-04-04T09:48:41.681+07:00[Asia/Bangkok]","0.0","0.35"
-"Get Mentor Transaction","Get mentor transaction with valid path","SUCCESS","2023-04-04T09:49:18.621+07:00[Asia/Bangkok]","0.0","0.59"
-"Get Mentor Transaction","Get mentor transaction with invalid path","SUCCESS","2023-04-04T09:49:19.225+07:00[Asia/Bangkok]","0.0","0.35"

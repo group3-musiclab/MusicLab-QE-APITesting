@@ -32,6 +32,13 @@ public class CreateMessageStepdef {
         SerenityRest.when().post(ChatAPIAutomation.POST_CREATE_MESSAGE);
     }
 
+
+    @Then("Status code rizki should be {int} Created")
+    public void statusCodeShouldBeCreated(int created) {
+        SerenityRest.then().statusCode(created);
+    }
+
+
     @And("Respon body message should be {string}")
     public void responBodyMessageShouldBe(String message) {
         SerenityRest.then()
@@ -50,6 +57,12 @@ public class CreateMessageStepdef {
     public void createMessageWithInvalidParameterMentor_id() {
         File reqBody = new File(ReqBodyChat.RB_INVALID_MENTOR_CHAT);
         chatAPIAutomation.setPostCreateMessage(reqBody);
+    }
+
+
+    @Then("Status code rizki should be {int} Bad Request")
+    public void statusCodeShouldBeBadRequest(int badRequest) {
+        SerenityRest.then().statusCode(badRequest);
     }
 
     @And("Validate create messsage invalid parameter mentor_id with json schema")
@@ -143,6 +156,12 @@ public class CreateMessageStepdef {
     public void sendRequestPostCreateMessageInvalidPath() {
         SerenityRest.when().post(ChatAPIAutomation.POST_CREATE_MESSAGE_INVALID_PATH);
     }
+
+    @Then("Status code rizki should be {int} Not Found")
+    public void statusCodeShouldBeNotFound(int notFound) {
+        SerenityRest.then().statusCode(notFound);
+    }
+
 
     @And("Validate create messsage with json schema")
     public void validateCreateMesssageWithJsonSchema() {

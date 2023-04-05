@@ -1,6 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"[MusicLab-API] Get Feature Mentors","[Negative Case] Get All List Mentors With Invalid Parameters","FAILURE","2023-04-04T09:48:47.106+07:00[Asia/Bangkok]","0.0","2.5"
-"[MusicLab-API] Get Feature Mentors","[Negative Case] Get Single List Mentors With Invalid ID","ERROR","2023-04-04T09:48:53.122+07:00[Asia/Bangkok]","0.0","0.11"
-"[MusicLab-API] Get Feature Mentors","[Negative Case] Get Single List Mentors With Blank ID","ERROR","2023-04-04T09:48:53.246+07:00[Asia/Bangkok]","0.0","0.02"
-"[MusicLab-API] Get Feature Mentors","[Positive Case] Get Single Mentor Profile","FAILURE","2023-04-04T09:48:53.273+07:00[Asia/Bangkok]","0.0","0.54"
-"[MusicLab-API] Get Feature Mentors","[Positive Case] Get Single List Mentors With Valid ID","FAILURE","2023-04-04T09:48:53.823+07:00[Asia/Bangkok]","0.0","0.49"

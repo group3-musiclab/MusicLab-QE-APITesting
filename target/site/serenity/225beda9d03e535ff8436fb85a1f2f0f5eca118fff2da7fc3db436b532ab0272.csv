@@ -1,6 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"MusicLab API Automation Testing Capstone Project","Delete a class","FAILURE","2023-04-04T09:48:38.424+07:00[Asia/Bangkok]","0.0","0.42"
-"Music Lab API Automation Testing","Delete schedule with valid id","FAILURE","2023-04-04T09:49:05.983+07:00[Asia/Bangkok]","0.0","0.85"
-"Music Lab API Automation Testing","Post add mentor schedule availability with valid json","FAILURE","2023-04-04T09:49:12.384+07:00[Asia/Bangkok]","0.0","0.5"
-"MusicLab API Automation Testing Capstone Project","Deactive student","FAILURE","2023-04-04T09:49:15.734+07:00[Asia/Bangkok]","0.0","0.5"
-"MusicLab API Automation Testing Capstone Project","Put or edit student password with valid parameters","FAILURE","2023-04-04T09:49:16.237+07:00[Asia/Bangkok]","0.0","1.68"

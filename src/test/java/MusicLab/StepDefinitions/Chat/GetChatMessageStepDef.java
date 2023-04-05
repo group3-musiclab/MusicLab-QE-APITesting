@@ -20,6 +20,13 @@ public class GetChatMessageStepDef {
         SerenityRest.when().get(ChatAPIAutomation.GET_CHAT_MESSAGE);
     }
 
+
+    @Then("Status code rizki should be {int} OK")
+    public void statusCodeShouldBeOK(int ok) {
+        SerenityRest.then().statusCode(ok);
+    }
+
+
     @Given("Get chat contents mentor {int} and student {int} invalid path")
     public void getChatContentsMentorMentorAndStudentStudentInvalidPath(int mentor, int student) {
         chatAPIAutomation.setGetChatMessageInvalidPath(mentor,student);

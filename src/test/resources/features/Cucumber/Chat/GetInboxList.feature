@@ -5,7 +5,7 @@ Feature: Get Inbox List
   Scenario: Get all list chat with valid path
   Given Get inbox list chat
   When Send request get inbox list
-  Then Status code should be 200 OK
+  Then Status code rizki should be 200 OK
   And Respon body message should be "success show chat group by student"
 
 
@@ -14,5 +14,5 @@ Feature: Get Inbox List
   Scenario: Get all list chat with invalid path
   Given Get inbox list chat with invalid path
   When Send request get inbox invalid path
-  Then Status code should be 404 Not Found
+  Then Status code rizki should be 404 Not Found
   And Respon body message should be "Not Found"
