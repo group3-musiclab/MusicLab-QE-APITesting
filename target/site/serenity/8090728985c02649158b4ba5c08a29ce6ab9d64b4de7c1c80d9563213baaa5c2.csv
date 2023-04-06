@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Delete genre","Delete valid parameter genre","SUCCESS","2023-04-06T09:14:32.066+07:00[Asia/Bangkok]","0.0","0.53"
+"Delete genre","Delete invalid parameter genre","SUCCESS","2023-04-06T09:14:32.601+07:00[Asia/Bangkok]","0.0","0.73"
+"Delete genre","Delete blank parameter genre","SUCCESS","2023-04-06T09:14:33.337+07:00[Asia/Bangkok]","0.0","0.34"

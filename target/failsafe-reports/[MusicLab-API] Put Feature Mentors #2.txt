@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: [MusicLab-API] Put Feature Mentors #2
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.777 s <<< FAILURE! - in [MusicLab-API] Put Feature Mentors #2
+[MusicLab-API] Put Feature Mentors #2.[Positive Case] Put Update Mentors Password With Valid JSON  Time elapsed: 1.777 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+

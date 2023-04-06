@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: [MusicLab-API] Get Feature Mentors #3
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.119 s <<< FAILURE! - in [MusicLab-API] Get Feature Mentors #3
+[MusicLab-API] Get Feature Mentors #3.[Negative Case] Get Single List Mentors With Invalid ID #1  Time elapsed: 0.043 s  <<< ERROR!
+java.lang.IllegalArgumentException: Path parameters were not correctly defined. Redundant path parameters are: mentor_id=$^%$^$%^. Undefined path parameters are: string.
+
+[MusicLab-API] Get Feature Mentors #3.[Negative Case] Get Single List Mentors With Invalid ID #2  Time elapsed: 0.025 s  <<< ERROR!
+java.lang.IllegalArgumentException: Path parameters were not correctly defined. Redundant path parameters are: mentor_id=chuakzzz. Undefined path parameters are: string.
+
+[MusicLab-API] Get Feature Mentors #3.[Negative Case] Get Single List Mentors With Invalid ID #3  Time elapsed: 0.023 s  <<< ERROR!
+java.lang.IllegalArgumentException: Path parameters were not correctly defined. Redundant path parameters are: mentor_id=100000000000000000000000. Undefined path parameters are: string.
+
+[MusicLab-API] Get Feature Mentors #3.[Negative Case] Get Single List Mentors With Blank ID  Time elapsed: 0.016 s  <<< ERROR!
+io.cucumber.core.exception.CucumberException: 
+Step [Get single mentors with blank ID {}] is defined with 0 parameters at 'MusicLab.StepDefinitions.Mentor.GetSingleListMentorsStepDef.getSingleMentorsWithblankId()'.
+However, the gherkin step has 1 arguments:
+ * blank
+Step text: Get single mentors with blank ID blank
+

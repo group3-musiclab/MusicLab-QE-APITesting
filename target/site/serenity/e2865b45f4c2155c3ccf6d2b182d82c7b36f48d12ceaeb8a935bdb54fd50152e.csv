@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Mentor post genre","Mentor post genre with valid json","SUCCESS","2023-04-06T09:14:35.243+07:00[Asia/Bangkok]","0.0","0.53"
+"Mentor post genre","Mentor post genre invalid json","SUCCESS","2023-04-06T09:14:35.78+07:00[Asia/Bangkok]","0.0","0.35"
+"Mentor post genre","Mentor post genre blank json","SUCCESS","2023-04-06T09:14:36.134+07:00[Asia/Bangkok]","0.0","0.34"
+"Mentor post genre","mentor post genre with no authorization","SUCCESS","2023-04-06T09:14:36.489+07:00[Asia/Bangkok]","0.0","0.35"

@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"MusicLab API Automation Testing Capstone Project","Get student data","SUCCESS","2023-04-06T09:15:11.101+07:00[Asia/Bangkok]","0.0","0.41"
+"MusicLab API Automation Testing Capstone Project","Put or edit student profile with valid parameters","SUCCESS","2023-04-06T09:15:11.516+07:00[Asia/Bangkok]","0.0","0.51"
+"MusicLab API Automation Testing Capstone Project","Deactive student","SUCCESS","2023-04-06T09:15:12.7+07:00[Asia/Bangkok]","0.0","0.49"
+"MusicLab API Automation Testing Capstone Project","Put or edit student password with valid parameters","SUCCESS","2023-04-06T09:15:13.194+07:00[Asia/Bangkok]","0.0","1.68"

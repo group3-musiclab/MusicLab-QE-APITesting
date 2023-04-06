@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Get Mentor Transaction" skipped="0" tests="2" time="0.95" timestamp="2023-04-06 09:15:15"><testcase name="Get mentor transaction with valid path"/><testcase name="Get mentor transaction with invalid path"/></testsuite>

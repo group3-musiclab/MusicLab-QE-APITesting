@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"[MusicLab-API] Put Feature Mentors","[Negative Case] Put Update Mentors Password With Invalid JSON","SUCCESS","2023-04-06T09:14:51.538+07:00[Asia/Bangkok]","0.0","0.34"
+"[MusicLab-API] Put Feature Mentors","[Negative Case] Put Update Mentors Password With Valid JSON No Authorized","SUCCESS","2023-04-06T09:14:51.881+07:00[Asia/Bangkok]","0.0","0.32"
+"[MusicLab-API] Put Feature Mentors","[Positive Case] Put Update Mentors Password With Valid JSON","FAILURE","2023-04-06T09:14:52.211+07:00[Asia/Bangkok]","0.0","1.77"
+"[MusicLab-API] Put Feature Mentors","[Negative Case] Put Update Mentors Profile With Invalid JSON","ERROR","2023-04-06T09:14:53.989+07:00[Asia/Bangkok]","0.0","0.01"
+"[MusicLab-API] Put Feature Mentors","[Negative Case] Put Update Mentors Profile With Valid JSON No Authorized","ERROR","2023-04-06T09:14:54.009+07:00[Asia/Bangkok]","0.0","0.02"
+"[MusicLab-API] Put Feature Mentors","[Negative Case] Put Update Mentors Profile With Oversize Image","SUCCESS","2023-04-06T09:14:54.035+07:00[Asia/Bangkok]","0.0","3.49"
+"[MusicLab-API] Put Feature Mentors","[Positive Case] Put Update Mentors Profile With Valid JSON","FAILURE","2023-04-06T09:14:57.528+07:00[Asia/Bangkok]","0.0","2.31"

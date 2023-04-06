@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "avatar": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "sex": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "instagram": {
+          "type": "string"
+        },
+        "about": {
+          "type": "string"
+        },
+        "count_reviews": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "avatar",
+        "name",
+        "email",
+        "sex",
+        "phone",
+        "address",
+        "instagram",
+        "about",
+        "count_reviews"
+      ]
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "data",
+    "message"
+  ]
+}

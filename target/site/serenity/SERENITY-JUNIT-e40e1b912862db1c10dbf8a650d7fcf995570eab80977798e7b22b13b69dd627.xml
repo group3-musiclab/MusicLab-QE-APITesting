@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Register mentor" skipped="0" tests="4" time="3.5" timestamp="2023-04-06 09:14:10"><testcase name="Register mentor valid json"/><testcase name="Register mentor with existing json"><failure message="1 expectation failed.&#10;JSON path message doesn't match.&#10;Expected: error insert data&#10;  Actual: email has been registered&#10;" type="java.lang.AssertionError">1 expectation failed.
+JSON path message doesn't match.
+Expected: error insert data
+  Actual: email has been registered
+</failure><system-err>1 expectation failed.
+JSON path message doesn't match.
+Expected: error insert data
+  Actual: email has been registered
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)&#13;
+io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)&#13;
+MusicLab.StepDefinitions.Auth.LoginMentorSteps.responseBodyShouldBeAsMessage(LoginMentorSteps.java:42)&#13;
+✽.Response body should be "error insert data" as message(classpath:features/Cucumber/Auth/RegisterMentor.feature:16)&#13;
+</system-err></testcase><testcase name="Register mentor with invalid json"/><testcase name="Register mentor with blank json"/></testsuite>

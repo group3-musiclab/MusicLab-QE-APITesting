@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "day": {
+              "type": "string"
+            },
+            "start_time": {
+              "type": "string"
+            },
+            "end_time": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "day",
+            "start_time",
+            "end_time"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "day": {
+              "type": "string"
+            },
+            "start_time": {
+              "type": "string"
+            },
+            "end_time": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "day",
+            "start_time",
+            "end_time"
+          ]
+        }
+      ]
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "data",
+    "message"
+  ]
+}

@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"MusicLab API Automation Testing Capstone Project","Put or edit student password with valid parameters","SUCCESS","2023-04-06T09:15:13.194+07:00[Asia/Bangkok]","0.0","1.68"
+"MusicLab API Automation Testing Capstone Project","Put or edit student password with invalid parameters","SUCCESS","2023-04-06T09:15:14.888+07:00[Asia/Bangkok]","0.0","0.54"
+"MusicLab API Automation Testing Capstone Project","Put or edit student password null parameter","SUCCESS","2023-04-06T09:15:15.434+07:00[Asia/Bangkok]","0.0","0.33"

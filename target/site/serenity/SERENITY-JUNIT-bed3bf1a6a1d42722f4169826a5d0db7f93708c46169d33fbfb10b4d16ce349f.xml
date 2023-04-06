@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Mentor post genre" skipped="0" tests="4" time="1.57" timestamp="2023-04-06 09:14:35"><testcase name="Mentor post genre with valid json"/><testcase name="Mentor post genre invalid json"/><testcase name="Mentor post genre blank json"/><testcase name="mentor post genre with no authorization"/></testsuite>

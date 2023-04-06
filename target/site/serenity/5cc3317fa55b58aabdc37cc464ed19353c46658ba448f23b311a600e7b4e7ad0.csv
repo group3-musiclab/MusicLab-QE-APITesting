@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login mentor","Login mentor valid json","SUCCESS","2023-04-06T09:13:59.841+07:00[Asia/Bangkok]","0.0","5.27"
+"Login mentor","Login mentor invalid json","SUCCESS","2023-04-06T09:14:05.131+07:00[Asia/Bangkok]","0.0","1.93"
+"Login mentor","Login mentor blank json","SUCCESS","2023-04-06T09:14:07.075+07:00[Asia/Bangkok]","0.0","0.38"
+"Login mentor","Login student valid json","SUCCESS","2023-04-06T09:14:07.489+07:00[Asia/Bangkok]","0.0","1.94"
+"Login mentor","Login student invalid json","SUCCESS","2023-04-06T09:14:09.435+07:00[Asia/Bangkok]","0.0","0.37"
+"Login mentor","Login student blank json","SUCCESS","2023-04-06T09:14:09.818+07:00[Asia/Bangkok]","0.0","0.58"

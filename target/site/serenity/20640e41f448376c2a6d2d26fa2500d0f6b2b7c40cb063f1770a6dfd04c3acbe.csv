@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Register student","Register student valid data","SUCCESS","2023-04-06T09:14:13.942+07:00[Asia/Bangkok]","0.0","1.88"
+"Register student","Register student with existing json","FAILURE","2023-04-06T09:14:15.83+07:00[Asia/Bangkok]","0.0","0.43"
+"Register student","Register student invalid data","SUCCESS","2023-04-06T09:14:16.266+07:00[Asia/Bangkok]","0.0","1.9"
+"Register student","Register student blank data","SUCCESS","2023-04-06T09:14:18.176+07:00[Asia/Bangkok]","0.0","0.56"

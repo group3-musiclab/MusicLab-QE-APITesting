@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Get all data about genre mentor" skipped="0" tests="3" time="1.12" timestamp="2023-04-06 09:14:34"><testcase name="Get mentor genre valid parameter"/><testcase name="Get mentor genre invalid parameter"/><testcase name="Get mentor genre blank parameter"/></testsuite>

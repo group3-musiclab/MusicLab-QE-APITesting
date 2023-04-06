@@ -1,0 +1,4 @@
+# Created at 2023-04-06T09:13:58.043
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Alterra\Automation\API\MusicLab-QE-APITesting\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

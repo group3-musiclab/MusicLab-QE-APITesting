@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Get all data about genre mentor","Get mentor genre valid parameter","SUCCESS","2023-04-06T09:14:34.088+07:00[Asia/Bangkok]","0.0","0.43"
+"Get all data about genre mentor","Get mentor genre invalid parameter","SUCCESS","2023-04-06T09:14:34.524+07:00[Asia/Bangkok]","0.0","0.35"
+"Get all data about genre mentor","Get mentor genre blank parameter","SUCCESS","2023-04-06T09:14:34.885+07:00[Asia/Bangkok]","0.0","0.34"

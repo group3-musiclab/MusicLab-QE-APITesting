@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: [MusicLab-API] Get Feature Mentors #4
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.541 s <<< FAILURE! - in [MusicLab-API] Get Feature Mentors #4
+[MusicLab-API] Get Feature Mentors #4.[Positive Case] Get Single List Mentors With Valid ID  Time elapsed: 0.032 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'Send request get single mentors with valid id' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("Send request get single mentors with valid id")
+public void send_request_get_single_mentors_with_valid_id() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

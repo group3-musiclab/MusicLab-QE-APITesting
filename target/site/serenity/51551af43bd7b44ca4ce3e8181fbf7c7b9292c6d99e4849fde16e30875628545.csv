@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"[MusicLab-API] Get Feature Instrument","[Positive Case] Get All List Instruments Normal Condition","SUCCESS","2023-04-06T09:14:36.851+07:00[Asia/Bangkok]","0.0","0.38"
+"[MusicLab-API] Get Feature Instrument","[Negative Case] Get Single List Instruments Invalid ID","SUCCESS","2023-04-06T09:14:37.244+07:00[Asia/Bangkok]","0.0","0.33"
+"[MusicLab-API] Get Feature Instrument","[Positive Case] Get Single List Instruments Valid ID","SUCCESS","2023-04-06T09:14:37.578+07:00[Asia/Bangkok]","0.0","0.41"
+"[MusicLab-API] Delete Feature Instrument","[Negative Case] Delete Instruments Valid ID No Auth","SUCCESS","2023-04-06T09:14:38.085+07:00[Asia/Bangkok]","0.0","0.33"
+"[MusicLab-API] Delete Feature Instrument","[Positive Case] Delete Instruments Valid ID","SUCCESS","2023-04-06T09:14:38.789+07:00[Asia/Bangkok]","0.0","0.5"

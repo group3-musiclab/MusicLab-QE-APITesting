@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Get Chat Message" skipped="0" tests="2" time="1.05" timestamp="2023-04-06 09:14:18"><testcase name="Get chat contents with valid path"/><testcase name="Get chat contents with invalid path"/></testsuite>

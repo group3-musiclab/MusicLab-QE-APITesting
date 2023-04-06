@@ -9,33 +9,41 @@ import net.thucydides.core.annotations.Step;
 import java.io.File;
 
 public class ReviewAPI extends Base {
-    public static String GET_SINGLE_REVIEW_IN_MENTOR_CASE = BASE_URL + "mentors/{id}/reviews?page=1";
-    public static String POST_CREATE_REVIEW_IN_MENTOR_VALID_DATA = BASE_URL + "mentors/5/reviews";
+    public static String GET_SINGLE_REVIEW_IN_MENTOR_CASE = BASE_URL + "mentors/{id}/reviews";
+    public static String POST_CREATE_REVIEW_IN_MENTOR_VALID_DATA = BASE_URL + "mentors/{id}/reviews";
+    public static String POST_CREATE_REVIEW_IN_MENTOR_WITH_INVALID = BASE_URL + "mentors/{id}/reviews";
 
-    public static String TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2ODE4NzEyNT" +
-            "EsInJvbGUiOiJTdHVkZW50IiwidXNlcklkIjoyMX0.NQaWrigYCAMDiSmqRAnTeWU_pNY54yYWw1PljM0qJ0I";
+    public static final String TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2OD" +
+            "IwNDE5NDgsInJvbGUiOiJNZW50b3IiLCJ1c2VySWQiOjQ5fQ.bNs0GBEgUZUE8HrNke7-Xne3bxnqohM2CKLjY6LIR9M";
 
 
     @Step("Get Single Review In Mentor")
     public void setGetSingleReviewInMentorCase(int id) {
         SerenityRest.given()
                 .pathParam("id" ,id);
+    }
 
+    @Step("Get Single Review In Mentor")
+    public void setGetSingleReviewInMentorCaseInvalid(String id) {
+        SerenityRest.given()
+                .pathParam("id" ,id);
     }
 
     @Step("Post Create Review in Mentor valid data")
-    public static void setPostCreateReviewInMentorValidData(File json) {
+    public void setPostCreateReviewInMentorValidData(File json, int id) {
         SerenityRest.given()
-                .header("Authorization", "Bearer " + TOKEN)
+                .pathParam("id", id)
+                .header("Authorization", "Bearer "+TOKEN)
                 .contentType(ContentType.JSON)
                 .body(json);
 
     }
 
     @Step("Post Create Review in mentor with invalid")
-    public static void setPostCreateReviewInMentorWithInvalid(File json) {
+    public void setPostCreateReviewInMentorWithInvalid(File json, int id) {
         SerenityRest.given()
-                .header("Authorization", "Bearer " + TOKEN)
+                .pathParam("id", id)
+                .header("Authorization", "Bearer "+TOKEN)
                 .contentType(ContentType.JSON)
                 .body(json);
 

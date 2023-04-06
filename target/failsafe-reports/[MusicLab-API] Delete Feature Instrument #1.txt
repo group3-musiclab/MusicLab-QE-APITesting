@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: [MusicLab-API] Delete Feature Instrument #1
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.701 s <<< FAILURE! - in [MusicLab-API] Delete Feature Instrument #1
+[MusicLab-API] Delete Feature Instrument #1.[Negative Case] Delete Instruments Invalid ID  Time elapsed: 0.346 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <404> but was <400>.
+
+
+[MusicLab-API] Delete Feature Instrument #1.[Negative Case] Delete Instruments Blank ID  Time elapsed: 0.017 s  <<< ERROR!
+io.cucumber.core.exception.CucumberException: 
+Step [Delete instrument with blank ID {}] is defined with 0 parameters at 'MusicLab.StepDefinitions.Instrument.DeleteInstrumentStepDef.deleteInstrumentWithBlankId()'.
+However, the gherkin step has 1 arguments:
+ * blank
+Step text: Delete instrument with blank ID blank
+

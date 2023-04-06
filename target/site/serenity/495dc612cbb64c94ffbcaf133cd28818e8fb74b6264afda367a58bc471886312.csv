@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Get Inbox List","Get all list chat with valid path","SUCCESS","2023-04-06T09:14:19.818+07:00[Asia/Bangkok]","0.0","0.52"
+"Get Inbox List","Get all list chat with invalid path","SUCCESS","2023-04-06T09:14:20.351+07:00[Asia/Bangkok]","0.0","0.35"
+"Get Student Transaction","Get student transaction with invalid path","SUCCESS","2023-04-06T09:15:17.346+07:00[Asia/Bangkok]","0.0","0.34"
