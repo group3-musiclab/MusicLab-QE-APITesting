@@ -3,6 +3,7 @@ package MusicLab.StepDefinitions.Student;
 import MusicLab.API.Student.studentAPI;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import net.serenitybdd.rest.SerenityRest;
@@ -110,5 +111,10 @@ public class StudentStepDef {
     @When("Send request put edit student password null parameter")
     public void sendRequestPutEditStudentPasswordNullParameter() {
         SerenityRest.when().put(studentAPI.PUT_STUDENT_PASSWORD);
+    }
+
+    @Then("Status code should be {int} Internal Server error student")
+    public void statusCodeShouldBeInternalServerError(int code) {
+        SerenityRest.then().statusCode(code);
     }
 }

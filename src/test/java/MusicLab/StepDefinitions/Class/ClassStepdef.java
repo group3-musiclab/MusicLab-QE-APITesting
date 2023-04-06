@@ -28,7 +28,10 @@ public class ClassStepdef {
     public void sendRequestPostMakeAClass() {
         SerenityRest.when().post(classAPI.POST_A_CLASS);
     }
-
+    @Then("Status code should be {int} OK class")
+    public void statusCodeShouldBeOK(int OK) {
+        SerenityRest.then().statusCode(OK);
+    }
     @And("Validate valid post class response body")
     public void validateValidPostClassResponseBody() {
         File json = new File(JSON_SCHEMA_USER + "Class/PostMakeAClass.json");
@@ -40,6 +43,10 @@ public class ClassStepdef {
     public void createAClassWithInvalidJson() {
         File jsonReq = new File(JSON_REQ_BODY_USER+"Class/PostMakeClassInvalid.json");
         classAPI.postMakeClassInvalid(jsonReq);
+    }
+    @Then("Status code should be {int} Bad Request class")
+    public void statusCodeShouldBeBadRequest(int BadRequest) {
+        SerenityRest.then().statusCode(BadRequest);
     }
 
     @And("Validate invalid post class response body")
@@ -57,11 +64,15 @@ public class ClassStepdef {
     //get list id valid
     @Given("Get list of all class with valid or listed mentor ID {int} and page id {int}")
     public void getListOfAllClassWithInvalidOrUnlistedMentorIDId(int mentor_id, int id) {
-
+        classAPI.getAllClassByIDMentor(mentor_id, id);
     }
     @When("Send request get list all class")
     public void sendRequestGetListAllClass() {
-        SerenityRest.when().get(MusicLab.API.Class.classAPI.GET_ALL_CLASS_BY_ID_MENTOR);
+        SerenityRest.when().get(classAPI.GET_ALL_CLASS_BY_ID_MENTOR);
+    }
+    @Then("Status code should be {int} Not Found class")
+    public void statusCodeShouldBeNotFound(int NotFound) {
+        SerenityRest.then().statusCode(NotFound);
     }
 
     //get list id invalid
@@ -98,7 +109,7 @@ public class ClassStepdef {
         SerenityRest.when().put(classAPI.PUT_A_CLASS);
     }
 
-    @Then("Status code should be {int} Created")
+    @Then("Status code should be {int} Created class")
     public void statusCodeShouldBeCreated(int created) {
         SerenityRest.then().statusCode(created);
     }
@@ -140,7 +151,7 @@ public class ClassStepdef {
         SerenityRest.when().delete(classAPI.DELETE_CLASS);
     }
 
-    @Then("Status code should be {int} No Content")
+    @Then("Status code should be {int} No Content class")
     public void statusCodeShouldBeNoContent(int noContent) {
         SerenityRest.then().statusCode(noContent);
     }
