@@ -1,4 +1,4 @@
-# MUSICLAB
+# MUSICLAB - QE - API
 
 <div align="center">
   <a href="https://github.com/group3-musiclab/MusicLab-QE-APITesting">
