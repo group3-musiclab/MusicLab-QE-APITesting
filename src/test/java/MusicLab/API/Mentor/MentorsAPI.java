@@ -13,7 +13,7 @@ import io.restassured.http.ContentType;
 public class MentorsAPI extends Base {
 
     public static File imageFile = new File("image.jpg");
-    public static  String TOKEN_MENTOR = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2ODE5MTU3NzMsInJvbGUiOiJNZW50b3IiLCJ1c2VySWQiOjQ5fQ.uhCirlYsHVLJ6Rr50w0MAkDlsav_qLOPRyc_EYIJJgU";
+    public static  String TOKEN_MENTOR = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2ODIyNDc3MjksInJvbGUiOiJNZW50b3IiLCJ1c2VySWQiOjg2fQ.PoRIUubhKqqL4xdE3dIRXHS5FTvEoN-WrZcFFnDksHE";
     public static  String CERTIFICATE_FILE = JSON_REQ_BODY_USER+"Mentor/download.jpg";
     public static  String AVATAR_FILE = JSON_REQ_BODY_USER+"Mentor/NormalAvatar.jpg";
     public static  String OVERSIZE_FILE = JSON_REQ_BODY_USER+"Mentor/OverSizeImage.jpg";

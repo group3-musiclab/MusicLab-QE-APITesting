@@ -1,4 +1,4 @@
-@DeleteInstrument @FeatureInstrument @BilalProject
+@DeleteInstrument @FeatureInstrument @BilalProject @Capstone
 Feature: [MusicLab-API] Delete Feature Instrument
 
   Scenario: [Negative Case] Delete Instruments Valid ID No Auth

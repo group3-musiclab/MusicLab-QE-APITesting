@@ -9,7 +9,7 @@ import net.thucydides.core.annotations.Step;
 import java.io.File;
 
 public class InstrumentAPI extends Base {
-    public static  String TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2ODEyNzk3NTgsInJvbGUiOiJNZW50b3IiLCJ1c2VySWQiOjE5fQ.DMXgj-ACiPMZqmbDeGeNTJOUz5O9-rxdftSqnWxCRJA";
+    public static  String TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2ODIyNDc3MjksInJvbGUiOiJNZW50b3IiLCJ1c2VySWQiOjg2fQ.PoRIUubhKqqL4xdE3dIRXHS5FTvEoN-WrZcFFnDksHE";
     public static final String GET_ALL_INSTRUMENT = BASE_URL + "instruments";
     public static final String GET_LIST_SINGLE_INSTRUMENT = BASE_URL + "mentors/{mentor_id}/instruments";
     public static final String POST_MENTORS_INSTRUMENT = BASE_URL + "mentors/instruments";
