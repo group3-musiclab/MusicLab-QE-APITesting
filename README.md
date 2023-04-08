@@ -8,7 +8,7 @@
   <p align="center">
     Capstone Program Immersive Alterra Academy
     <br />
-    <a href="https://docs.google.com/spreadsheets/d/1HtNetdRPm1ezVg-XtJXQnPcFSFHE1R6Gu0xgEZ4o9cE/edit?usp=sharing"><strong>| Test Case API Docomentation |</strong></a>
+    <a href="https://docs.google.com/spreadsheets/d/1HtNetdRPm1ezVg-XtJXQnPcFSFHE1R6Gu0xgEZ4o9cE/edit?usp=sharing"><strong>| Test Case API Documentation |</strong></a>
     <br />
     <br />
   </p>
