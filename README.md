@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://github.com/group3-musiclab/MusicLab-QE-APITesting">
-    <img src="assets/logo-musiclab.webp" width="304" height="297">
+    <img src="assets/logo-musiclab.webp" width="304" height="300">
   </a>
 
   <p align="center">
