@@ -62,17 +62,12 @@ $ mvn clean test
 
 # 🤖 Author
 
-- Aldan Maulana Fajri <br> [![GitHub](https://img.shields.io/badge/Kharisma-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RenPaijo)
-- Aisyah Dewi Rulyadi <br> [![GitHub](https://img.shields.io/badge/Alif-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)]
-(https://github.com/icaadr)
-- Arif Ramadhan Setu <br> [![GitHub](https://img.shields.io/badge/Alif-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)]
-(https://github.com/ariframadhan1702)
-- Alan Darma Saputra <br> [![GitHub](https://img.shields.io/badge/Alif-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)]
-(https://github.com/alandarma)
-- Muhammad Bilal <br> [![GitHub](https://img.shields.io/badge/Alif-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)]
-(https://github.com/bilalbilul)
-- Rizki Kurniawan Rasyid <br> [![GitHub](https://img.shields.io/badge/Alif-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)]
-(https://github.com/rizkura96)
+- Aldan Maulana Fajri <br> [![GitHub](https://img.shields.io/badge/Aldan-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RenPaijo)
+- Aisyah Dewi Rulyadi <br> [![GitHub](https://img.shields.io/badge/Aisyah-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/icaadr)
+- Arif Ramadhan Setu <br> [![GitHub](https://img.shields.io/badge/Arif-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ariframadhan1702)
+- Alan Darma Saputra <br> [![GitHub](https://img.shields.io/badge/Alan-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alandarma)
+- Muhammad Bilal <br> [![GitHub](https://img.shields.io/badge/Bilal-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bilalbilul)
+- Rizki Kurniawan Rasyid <br> [![GitHub](https://img.shields.io/badge/Rizki-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rizkura96)
 
 <h5>
 <p align="center">Built with ❤️ by MusicLab Team ©️ 2023</p>
