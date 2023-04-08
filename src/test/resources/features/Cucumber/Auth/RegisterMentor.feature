@@ -13,7 +13,7 @@
     Given Mentor register with valid json
     When Send request post register
     Then Status code should 400 Bad Request auth
-    And  Response body should be "error insert data" as message
+    And  Response body should be "email has been registered" as message
     And Validate register json schema
 
   Scenario: Register mentor with invalid json
